@@ -1,0 +1,45 @@
+body {
+  background-color:darkgrey;
+  text-align: center;
+  padding-top: 7em;
+}
+
+.header_container {
+    text-align: center;
+}
+
+#header_brand {
+    line-height: 2;
+    margin-left: 6rem;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    color: #FFFFFF;
+    opacity: 0.7;
+    font-family: Montserrat,sans-serif;
+
+}
+
+#link_menu {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #FFFFFF;
+    opacity: 0.7;
+    margin-right:2.5rem;
+    text-transform: uppercase;
+}
+
+.navbar-nav a:hover {
+    border-bottom: 1px solid grey;
+}
+
+.navbar-nav a.active {
+    border-bottom: 1px solid grey;
+}
+
+#navbarMenu {
+    margin-left:3rem;
+}
+
+
+
+
