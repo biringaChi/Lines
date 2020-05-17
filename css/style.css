@@ -24,8 +24,8 @@ a, a:hover {
 
 .about_me_my_col {
     border: 3px dotted blue;
-}*/
-
+}
+*/
 
 .linkedin {
     font-size: 1rem;
@@ -122,7 +122,6 @@ html {
     border-bottom: 0.5px solid red;
     width: 40%;
     margin: 0 auto;
-    /*margin-right: -10rem;*/
 }
 
 .about_me_content {
@@ -141,13 +140,194 @@ html {
 }
 
 .profile_picture {
+    border-radius: 5px;
+    cursor: pointer;
+    /*border: 1px solid grey;*/
+    opacity: 0.5;
+}
+
+
+.profile_picture:hover {
+    opacity: 1;
+}
+
+.image_placement {
     text-align: left;
-    border-radius: 10px;
 }
 
 .typewrite {
     opacity: 0.7;
     font-family: "Helvetica Neue";
-/*    font-size: 2rem;*/
     font-weight: lighter;
 }
+
+
+body {
+  background-color: #212529;
+  text-align: center;
+  padding-top: 10em;
+  color: #fff;
+  font-size: 1rem;
+/*  opacity: 0.7;*/
+  font-weight: lighter;
+}
+
+a, a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+.linkedin {
+    font-size: 1rem;
+    color: grey;
+}
+
+.github {
+    font-size: 1rem;
+    background-color: #212529;
+    color: grey;
+}
+
+#footer_copy {
+    font-size: 0.8rem;
+    /*border: 1px solid green;*/
+    position: relative;
+    left: -0.7rem;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.navbar {
+    background-color: #212529;
+    line-height: 4;
+/*    font-family: Helvetica Neue !important;*/
+}
+
+#link_menu {
+    font-size: 1.2rem;
+    font-weight: lighter;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-right:2.5rem;
+}
+
+.navbar-nav a:hover {
+    border-bottom: 0.5px solid red;
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    float:none;
+}
+
+.typewrite {
+    color: #fff;
+}
+
+.contact_info_2 {
+    line-height: 1.5;
+    opacity: 0.7;
+    font-family: "Helvetica Neue";
+    text-align: center;
+    margin-bottom: 1.0rem;
+    margin-top: 1.0rem;
+    font-size: 1.0rem;
+    font-weight: lighter;
+}
+
+
+.nav_menu_items {
+    line-height: 1.5;
+    opacity: 0.8;
+    font-family: "Helvetica Neue";
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    border-bottom: 0.5px solid red;
+    width: 20%;
+    margin: 0 auto;
+    /*margin-right: -10rem;*/
+}
+
+.about_nav_menu_items {
+    line-height: 1.5;
+    opacity: 0.8;
+    font-family: "Helvetica Neue";
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: lighter;
+    border-bottom: 0.5px solid red;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.about_me_content {
+    margin-top: 1.0rem;
+    font-size: 0.9rem;
+    opacity: 0.7;
+    text-align: justify;
+}
+
+.intro_content {
+    opacity: 0.9;
+    font-family: "Helvetica Neue";
+    text-align: center;
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+.profile_picture {
+    border-radius: 5px;
+    cursor: pointer;
+    /*border: 1px solid grey;*/
+    opacity: 0.5;
+}
+
+
+.profile_picture:hover {
+    opacity: 1;
+}
+
+.image_placement {
+    text-align: left;
+}
+
+.typewrite {
+    opacity: 0.7;
+    font-family: "Helvetica Neue";
+    font-weight: lighter;
+}
+
+.hovereffect img {
+display:block;
+position:relative;
+-webkit-transition:all .4s linear;
+transition:all .4s linear;
+}
+
+
+.hovereffect:hover img {
+-ms-transform:scale(1.2);
+-webkit-transform:scale(1.2);
+transform:scale(1.2);
+}
+
+.hovereffect:hover .overlay {
+opacity:1;
+width: 50%;
+filter:alpha(opacity=100);
+}
+
