@@ -1,65 +1,32 @@
+/*========== Body Begins ==========*/
+
 body {
   background-color: #212529;
   text-align: center;
   padding-top: 10em;
   color: #fff;
+  height: 100%;
   font-size: 1rem;
   font-weight: lighter;
 }
 
-a, a:hover {
+a, a:hover{
     color: inherit;
     text-decoration: none;
 }
 
-
-/*.about_me_my_container {
-   border: 1px solid white;
+*:focus {
+    outline: none;
 }
 
-.about_me_my-row {
-    border: 3px solid red;
-}
+/*========== Body Ends ==========*/
 
-.about_me_my_col {
-    border: 3px dotted blue;
-}
-*/
 
-.linkedin {
-    font-size: 1rem;
-    color: grey;
-}
-
-.github {
-    font-size: 1rem;
-    background-color: #212529;
-    color: grey;
-}
-
-#footer_copy {
-    font-size: 0.8rem;
-    position: relative;
-    left: -0.7rem;
-    font-weight: lighter;
-    opacity: 0.7;
-}
-
-html {
-  scroll-behavior: smooth;
-}
+/*========== Navigation Begins ==========*/
 
 .navbar {
     background-color: #212529;
     line-height: 4;
-}
-
-#link_menu {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    color: #FFFFFF;
-    opacity: 0.8;
-    margin-right:2.5rem;
 }
 
 .navbar-nav a:hover {
@@ -78,22 +45,6 @@ html {
     float:none;
 }
 
-.typewrite {
-    color: #fff;
-}
-
-.contact_info_2 {
-    line-height: 1.5;
-    opacity: 0.7;
-    font-family: "Helvetica Neue";
-    text-align: center;
-    margin-bottom: 1.0rem;
-    margin-top: 1.0rem;
-    font-size: 1.0rem;
-    font-weight: lighter;
-}
-
-
 .nav_menu_items {
     line-height: 1.5;
     opacity: 0.8;
@@ -105,155 +56,56 @@ html {
     border-bottom: 0.5px solid red;
     width: 20%;
     margin: 0 auto;
-}
-
-.about_nav_menu_items {
-    line-height: 1.5;
-    opacity: 0.8;
-    font-family: "Helvetica Neue";
-    text-align: center;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    font-weight: lighter;
-    border-bottom: 0.5px solid red;
-    width: 40%;
-    margin: 0 auto;
-}
-
-.about_me_content {
-    margin-top: 1.0rem;
-    font-size: 0.9rem;
-    opacity: 0.7;
-    text-align: justify;
-}
-
-.intro_content {
-    opacity: 0.9;
-    font-family: "Helvetica Neue";
-    text-align: center;
-    font-size: 2rem;
-    font-weight: lighter;
-}
-
-.profile_picture {
-    border-radius: 5px;
-    cursor: pointer;
-    opacity: 0.5;
-}
-
-
-.profile_picture:hover {
-    opacity: 1;
-}
-
-.image_placement {
-    text-align: left;
-}
-
-.typewrite {
-    opacity: 0.7;
-    font-family: "Helvetica Neue";
-    font-weight: lighter;
-}
-
-
-a, a:hover {
-    color: inherit;
-    text-decoration: none;
-}
-
-.linkedin {
-    font-size: 1rem;
-    color: grey;
-}
-
-.github {
-    font-size: 1rem;
-    background-color: #212529;
-    color: grey;
-}
-
-#footer_copy {
-    font-size: 0.8rem;
-    position: relative;
-    left: -0.7rem;
-    font-weight: lighter;
-    opacity: 0.7;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-.navbar {
-    background-color: #212529;
-    line-height: 4;
-
-     /*border: 0.5px solid red;*/
-}
-
-#link_menu {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    color: #FFFFFF;
-    opacity: 0.8;
-    margin-right:2.5rem;
-}
-
-.navbar-nav a:hover {
-    border-bottom: 0.5px solid red;
-}
-
-.navbar-nav {
-    float:none;
-    margin:0 auto;
-    display: block;
-    text-align: center;
-    /*border: 0.5px solid red;*/
 }
 
 #navbarMenu {
     /*border: 0.5px solid green;*/
     text-align: center;
-    margin-left: 7rem;
+    /*margin-left: 7rem;*/
 }
 
-
-.navbar-nav > li {
-    display: inline-block;
-    float:none;
-}
-
-.typewrite {
-    color: #fff;
-}
-
-.contact_info_2 {
-    line-height: 1.5;
-    opacity: 0.7;
-    font-family: "Helvetica Neue";
-    text-align: center;
-    margin-bottom: 1.0rem;
-    margin-top: 1.0rem;
-    font-size: 1.0rem;
+#link_menu {
+    font-size: 1.2rem;
     font-weight: lighter;
+    color: #FFFFFF;
+    opacity: 0.8;
+    margin-right:2.5rem;
 }
 
+.logo {
+    height: 50px;
+    width: 50px;
+    padding-right: 0px;
+    padding-left: 0px;
+    /*margin-right: -25rem;*/
+}
 
-.nav_menu_items {
-    line-height: 1.5;
+/*========== Navigation Ends ==========*/
+
+
+/*========== Introduction Begins ==========*/
+
+.intro_content {
     opacity: 0.8;
     font-family: "Helvetica Neue";
     text-align: center;
-    margin-bottom: 0.5rem;
     font-size: 2rem;
     font-weight: lighter;
-    border-bottom: 0.5px solid red;
-    width: 20%;
-    margin: 0 auto;
 }
 
-.about_nav_menu_items {
+.typewrite {
+    opacity: 0.8;
+    font-family: "Helvetica Neue";
+    font-weight: lighter;
+    color: #fff;
+}
+
+/*========== Introduction Ends ==========*/
+
+
+/*========== About Me Begins ==========*/
+
+.about_me_header {
     line-height: 1.5;
     opacity: 0.8;
     font-family: "Helvetica Neue";
@@ -271,14 +123,20 @@ html {
     font-size: 0.9rem;
     opacity: 0.7;
     text-align: justify;
+    /*border: 1px solid green;*/
 }
 
-.intro_content {
-    opacity: 0.9;
+.about_me_header {
+    line-height: 1.5;
+    opacity: 0.8;
     font-family: "Helvetica Neue";
     text-align: center;
+    margin-bottom: 0.5rem;
     font-size: 2rem;
     font-weight: lighter;
+    border-bottom: 0.5px solid red;
+    width: 50%;
+    margin: 0 auto;
 }
 
 .profile_picture {
@@ -286,7 +144,6 @@ html {
     cursor: pointer;
     opacity: 0.5;
 }
-
 
 .profile_picture:hover {
     opacity: 1;
@@ -296,11 +153,6 @@ html {
     text-align: left;
 }
 
-.typewrite {
-    opacity: 0.7;
-    font-family: "Helvetica Neue";
-    font-weight: lighter;
-}
 
 .hovereffect img {
 display:block;
@@ -322,11 +174,92 @@ width: 50%;
 filter:alpha(opacity=100);
 }
 
-.logo {
-    height: 50px;
-    padding-right: 0px;
-    padding-left: 0px;
-    margin-right: -25rem;
+/*========== About Me Ends ==========*/
+
+
+/*========== Projects Begins ==========*/
+
+.projects_container {
+   border: 1px solid white;
+}
+
+.projects_my_row {
+    border: 3px solid red;
+}
+
+.projects_my_col {
+    border: 3px dotted blue;
+}
+
+.projects_header {
+    line-height: 1.5;
+    opacity: 0.8;
+    font-family: "Helvetica Neue";
+    text-align: center;
+    margin-bottom: 0.5rem;
+
+    font-size: 2rem;
+    font-weight: lighter;
+    border-bottom: 0.5px solid red;
+    width: 19%;
+    margin: 0 auto;
+}
+
+/*========== Projects Ends ==========*/
+
+
+/*========== Contact Me Begins ==========*/
+
+.contact_info_2 {
+    line-height: 1.5;
+    opacity: 0.7;
+    font-family: "Helvetica Neue";
+    text-align: center;
+    margin-bottom: 1.0rem;
+    margin-top: 1.0rem;
+    font-size: 1.0rem;
+    font-weight: lighter;
+}
+
+/*========== Footer Begins ==========*/
+
+#footer_copy {
+    font-size: 0.8rem;
+    position: relative;
+    left: -1rem;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+
+.linkedin {
+    font-size: 1rem;
+    color: grey;
+}
+
+.github {
+    font-size: 1rem;
+    background-color: #212529;
+    color: grey;
 }
 
 
+.linkedin {
+    font-size: 1rem;
+    color: grey;
+}
+
+.github {
+    font-size: 1rem;
+    background-color: #212529;
+    color: grey;
+}
+
+#footer_copy {
+    font-size: 0.8rem;
+    position: relative;
+    left: -0.7rem;
+    font-weight: lighter;
+    opacity: 0.7;
+}
+
+/*========== Footer Ends ==========*/
