@@ -27,7 +27,7 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarMenu">
-            <a href="index.html"><img class="logo img-responsive" src="images/CB.png" alt="logo"></a>
+            <a href="index.html"><img class="logo img-responsive" width="50px", height="50px" src="images/logo_2.png" alt="logo"></a>
             <ul class="navbar-nav">
                 <li class="nav-item"><a id = "link_menu" href="#about" target="_self" class="nav-link scroll">About</a></li>
                 <li class="nav-item"><a id = "link_menu" href="#projects_link" target="_self" class="nav-link scroll">Projects</a></li>
@@ -59,7 +59,7 @@
             <div class="col-md-5 py-2 col-sm-6 about_me_my_col" >
                 <div class="about_me_header" id="about_me"> About Me </div>
                 <div class="about_me_content">
-                    <p> Hey there, I'm Chidera, you can call me Chi, a graduate student, studying Computer Science at the University of Massachusetts-Dartmouth. </p>
+                    <p> Hey there, I'm Chidera, you can call me Chi, I am a graduate student, studying Computer Science at the University of Massachusetts-Dartmouth. </p>
 
                     <p> I have a strong technical background in descriptive and predictive analysis.
                     Super interested in the manipulation and interpretation of data to derive pertinent insights. </p>
@@ -70,9 +70,10 @@
             </div>
 
             <div class="col-md-4 col-sm-6 pt-1 about_me_my_col">
-                <div class="image_placement hovereffect overlay">
+                <div class="image_placement hovereffect_ab overlay_ab">
                     <img class="profile_picture img-responsive" width="30%", height="70%" src="images/profile_picture.jpg" alt="Profile Picture"/>
                 </div>
+                <div id = "projects_link"></div>
             </div>
         </div>
     </div>
@@ -83,21 +84,67 @@
     <div class="container mt-5 projects_container">
         <div class="projects_header"> Projects </div>
 
+        <!-- Row 1 -->
         <div class="row mt-1 justify-content-start projects_my_row">
-            <div class="col-md-6 py-2 col-sm-6 projects_my_col">
-                Row 1 Col 1
+            <div class="col-md-6 py-4 col-sm-6 projects_my_col">
+                <div class="projects_image_placement hovereffect_2">
+                    <img class="sql_img img-responsive" width="100%", height="100%" src="images/SQL_4.jpeg" alt="SQL Query Evaluator"/>
+                    <div class="overlay_2">
+                        <p class="icon-links">
+                            <a class="github" href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank"><i class="fab fa-github"></i></a>
+                        </p>
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 py-2 col-sm-6 projects_my_col">
-                    Row 1 Col 2
+
+            <div class="col-md-6 py-4 col-sm-6 projects_my_col">
+                <div class="projects_image_placement hovereffect_2">
+                    <img class="sql_img img-responsive" width="100%", height="100%" src="images/SQL_4.jpeg" alt="SQL Query Evaluator"/>
+                    <div class="overlay_2">
+                        <p class="icon-links">
+                            <a class="github" href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank"><i class="fab fa-github"></i></a>
+                        </p>
+                    </div>
+                </div>
+                    <!-- Row 1 Col 2 -->
             </div>
         </div>
 
+        <!-- Row 2 -->
         <div class="row justify-content-start projects_my_row">
-            <div class="col-md-6 py-2 col-sm-6 projects_my_col" >
-                Row 2 Col 1
+            <div class="col-md-6 py-0 col-sm-6 projects_my_col" >
+                <div class="projects_content">
+                    <h5> PIF Model: An AI Model to generate videos</h5>
+                    <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum mollis diam sagittis eros placerat commodo.
+                        Nullam dapibus lectus vel viverra semper. Nam consequat semper lacus, ac placerat
+                        lacus sagittis non. Maecenas mollis egestas mauris, nec malesuada odio tincidunt a. Fusce lobortis facilisis lorem at laoreet.
+
+                        <p> Github Repository: &nbsp; <a class="github fab fa-github" href="https://github.com/biringaChi/PIF-Model" target="_blank"></a>
+                            &emsp; Technology Used: &nbsp; <i class="fab fa-python"></i> </p>
+                        <p> Authors: <i class="fas fa-male " style="font-size: 1rem"></i> <i class="fas fa-male " style="font-size: 1rem"></i> </p>
+                    </p>
+                </div>
             </div>
-            <div class="col-md-6 py-2 col-sm-6 projects_my_col">
-                Row 2 Col 2
+            <div class="col-md-6 py-0 col-sm-6 projects_my_col">
+                <div class="projects_content">
+                    <h5> SQL Query Evaluator: A ........... </h5>
+                    <p> My teammates and I built an SQL query evaluator for a single-threaded database that can run TPC-H queries.
+                        It has operational support for Select, Project, Join, Union, Aggregate operations and implements
+                        standard optimization techniques such as projection pushdown, selection pushdown and cross product to join conversion.
+                        Our program will receive an SQL File with a collection of CREATE TABLE and SELECT statements. These statements define a
+                        representational schema for the data and performs filtering and other operations on the data.
+                        The result of these operations will be in a standardized row-oriented data form.
+
+                        <!-- <button type="button" class="btn btn-secondary" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">Tooltip on bottom</button> -->
+
+                        <p> Github Repository: &nbsp; <a class="github fab fa-github" href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank"></a>
+                            &emsp; Technology Used: &nbsp; <i class="fab fa-java" style="font-size: 2rem"></i> &nbsp; <i class="fas fa-database"> </i> </p>
+                        <p> Authors:
+                            <i class="fas fa-male" data-toggle="tooltip" data-placement="bottom" title="Josue" style="font-size: 1rem"></i>
+                            <i class="fas fa-male " style="font-size: 1rem"></i>
+                        </p>
+                    </p>
+                </div>
             </div>
         </div>
     </div>
@@ -106,9 +153,14 @@
 
     <br> <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 
+<!--     <script type="text/javascript">
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+    </script> -->
 
     <script src="js/script.js"></script>
-    <!-- JQuery -->
+    <!-- Dependemcoes -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -124,7 +176,7 @@
 
           <div class="col-md-12 py-5">
             <div class="mb-4 flex-center">
-                <div class="nav_menu_items" id="contact"> Contact Me </div>
+                <div class="contact_header" id="contact"> Contact Me </div>
                 <div class="contact_info_2">  North-Dartmouth Massachusetts MA 02740 <br> +1(508) 863-7923 <br> biringachidera@gmail.com </div>
                 <a class="linkedin" href="https://www.linkedin.com/in/chidera-biringa" target="_blank"> <i class="fab fa-linkedin-in mr-3"> </i></a>
                 <a class="github" href="https://github.com/biringaChi" target="_blank"><i class="fab fa-github mr-3"> </i></a>
