@@ -30,7 +30,12 @@ a, a:hover{
 }
 
 .navbar-nav a:hover {
-    border-bottom: 0.5px solid grey;
+    /*border-bottom: 0.5px solid grey;*/
+    color: grey;
+}
+
+.navbar-nav > li a.active {
+    border-bottom: 0.5px solid pink;
 }
 
 .navbar-nav {
@@ -38,11 +43,16 @@ a, a:hover{
     margin:0 auto;
     display: block;
     text-align: center;
+    margin-right: 1rem;
 }
 
 .navbar-nav > li {
     display: inline-block;
     float:none;
+    font-size: 1rem;
+    font-weight: lighter;
+    margin-left:2.5rem;
+    opacity: 0.8;
 }
 
 .contact_header {
@@ -58,24 +68,11 @@ a, a:hover{
     margin: 0 auto;
 }
 
-#navbarMenu {
-    /*border: 0.5px solid green;*/
-    text-align: center;
-    /*margin-left: 7rem;*/
-}
-
-#link_menu {
-    font-size: 1.2rem;
-    font-weight: lighter;
-    color: #FFFFFF;
-    opacity: 0.8;
-    margin-right:2.5rem;
-}
-
 .logo {
     padding: 0px;
     border: 1px solid grey;
     border-radius: 5px;
+    margin-left: 1rem;
     /*margin-right: -25rem;*/
 }
 
@@ -93,7 +90,7 @@ a, a:hover{
 }
 
 .typewrite {
-    opacity: 0.8;
+    opacity: 0.7;
     font-family: "Helvetica Neue";
     font-weight: lighter;
     color: #fff;
@@ -140,7 +137,7 @@ a, a:hover{
 }
 
 
-/*.hovereffect_ab img {
+.hovereffect_ab img {
 display:block;
 position:relative;
 -webkit-transition:all .4s linear;
@@ -158,9 +155,24 @@ transform:scale(1.2);
 opacity:1;
 width: 50%;
 filter:alpha(opacity=100);
-}*/
+}
 
 /*========== About Me Ends ==========*/
+
+
+/*========== Resume Begins ==========*/
+.resume_header {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.resume_header:hover {
+    color: grey;
+}
+
+/*========== Resume Ends ==========*/
+
 
 
 /*========== Projects Begins ==========*/
@@ -322,7 +334,6 @@ filter:alpha(opacity=100);
     background-color: #212529;
     color: grey;
 }
-
 
 .linkedin {
     font-size: 1rem;
