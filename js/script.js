@@ -12,11 +12,6 @@ function scrollTo() {
     }
 }
 
-// function scrollTo() {
-//     const links = document.querySelectorAll('.scroll');
-//     links.forEach(each => (each.onclick = scrollAnchors));
-// }
-
 function scrollAnchors(e, respond = null) {
     const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
     e.preventDefault();
@@ -93,8 +88,3 @@ let TxtType = function(el, toRotate, period) {
         css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
         document.body.appendChild(css);
     };
-
-
-// $(function () {
-//   $('[data-toggle="tooltip"]').tooltip()
-// })
