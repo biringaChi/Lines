@@ -1,9 +1,13 @@
 /*========== Body Begins ==========*/
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
   background-color: #212529;
   text-align: center;
-  padding-top: 10em;
+  /*padding-top: 10rem;*/
   color: #fff;
   height: 100%;
   font-size: 1rem;
@@ -27,6 +31,7 @@ a, a:hover{
 .navbar {
     background-color: #212529;
     line-height: 4;
+    /*border: 1px solid red;*/
 }
 
 .navbar-nav a:hover {
@@ -69,10 +74,24 @@ a, a:hover{
     /*margin-right: -25rem;*/
 }
 
+.resume_header {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.resume_header:hover {
+    color: grey;
+}
+
 /*========== Navigation Ends ==========*/
 
 
 /*========== Introduction Begins ==========*/
+.intro_container {
+    margin-top: 12rem;
+    /*border: 1px solid grey;*/
+}
 
 .intro_content {
     opacity: 0.8;
@@ -88,35 +107,39 @@ a, a:hover{
     font-weight: lighter;
     color: #fff;
 }
-
 /*========== Introduction Ends ==========*/
 
 
 /*========== About Me Begins ==========*/
-
-.about_me_header {
-    line-height: 1.5;
+.section_headers {
+    line-height: 0em;
     opacity: 0.8;
     font-family: "Helvetica Neue";
     text-align: center;
-    margin-bottom: 0.5rem;
     font-size: 2rem;
-    font-weight: lighter;
-    border-bottom: 0.5px solid grey;
-    width: 40%;
+    border: 0.5px solid grey;
+    width: 20%;
     margin: 0 auto;
+    margin-top: 8rem;
+    margin-bottom: 2rem;
+}
+
+.section_headers span {
+    background: #212529;
+    padding: 0 10px;
+
 }
 
 .about_me_content {
     margin-top: 1.0rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     opacity: 0.7;
     text-align: justify;
     /*border: 1px solid green;*/
 }
 
 .profile_picture {
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     opacity: 0.5;
     border: 1px solid grey;
@@ -124,10 +147,6 @@ a, a:hover{
 
 .profile_picture:hover {
     opacity: 1;
-}
-
-.image_placement {
-    text-align: left;
 }
 
 
@@ -154,44 +173,34 @@ filter:alpha(opacity=100);
 /*========== About Me Ends ==========*/
 
 
-/*========== Resume Begins ==========*/
-.resume_header {
-    border: 1px solid grey;
-    border-radius: 5px;
-    padding: 5px;
-}
-
-.resume_header:hover {
-    color: grey;
-}
-
-/*========== Resume Ends ==========*/
-
 /*========== Projects Begins ==========*/
+
+.about_me_container {
+   /*border: 1px solid white;*/
+}
 
 /*.projects_container {
    border: 1px solid white;
-}
-
-.projects_my_row {
-    border: 3px solid red;
-}
-
-.projects_my_col {
-    border: 3px dotted blue;
 }*/
 
-.projects_header {
-    line-height: 1.5;
-    opacity: 0.8;
+.about_me_my_row {
+    /*border: 3px solid red;*/
+}
+
+.about_me_my_col {
+    /*border: 3px dotted blue;*/
+}
+
+.image_placement {
+    /*border: 1px solid pink;*/
+    margin-top: 1rem;
+}
+
+.projects_intro {
     font-family: "Helvetica Neue";
-    text-align: center;
     margin-bottom: 0.5rem;
-    font-size: 2rem;
-    font-weight: lighter;
-    border-bottom: 0.5px solid grey;
-    width: 13%;
-    margin: 0 auto;
+    font-size: 0.9rem;
+    font-weight: bold;
 }
 
 .sql_img {
@@ -210,7 +219,7 @@ filter:alpha(opacity=100);
     bottom: 0;
     padding: 1em;
     height: 3em;
-    /*background: green;*/
+    /*background: blue;*/
     color: #3c4a50;
     -webkit-transition: -webkit-transform 0.35s;
     transition: transform 0.35s;
@@ -234,29 +243,239 @@ filter:alpha(opacity=100);
 
 .projects_content {
     margin-top: 2.0rem;
-    font-size: 0.9rem;
-    /*background-color: grey;*/
+    font-size: 0.8rem;
     opacity: 0.7;
     text-align: justify;
     /*border: 1px solid green;*/
 }
-/*========== Projects Ends ==========*/
 
-/*========== Contact Me Begins ==========*/
-
-.contact_header {
-    line-height: 1.5;
-    opacity: 0.8;
-    font-family: "Helvetica Neue";
+.github_pill {
+    border: 1px solid grey;
+    border-radius: 5px;
+    padding: 5px;
     text-align: center;
-    margin-bottom: 0.5rem;
-    font-size: 2rem;
-    font-weight: lighter;
-    border-bottom: 0.5px solid grey;
-    width: 20%;
-    margin: 0 auto;
+    width: 30%;
+    margin: auto;
 }
 
+.github_pill:hover {
+    color: grey;
+}
+/*========== Projects Ends ==========*/
+
+/*========== Experience Begins ==========*/
+.experience_container {
+   /*border: 1px solid pink;*/
+   margin-top: 8rem;
+}
+
+.main-timeline{ position: relative; }
+.main-timeline:before,
+.main-timeline:after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+
+.main-timeline:before{
+    content: "";
+    width: 3px;
+    height: 100%;
+    background: #212529;
+    position: absolute;
+    top: 0;
+    left: 50%;
+}
+.main-timeline .timeline{
+    width: 50%;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+.main-timeline .timeline:before,
+.main-timeline .timeline:after{
+    content: "";
+    display: block;
+    width: 100%;
+    clear: both;
+}
+.main-timeline .timeline:first-child:before,
+.main-timeline .timeline:last-child:before{
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-radius: 15px;
+    /*background: #fff; /* white circle */ */
+    /*border: 8px solid #cca872;   /* golden border circle*/*/
+    position: absolute;
+    top: 0;
+    right: -14px;
+    z-index: 1;
+}
+.main-timeline .timeline:last-child:before{
+    top: auto;
+    bottom: 0;
+}
+.main-timeline .timeline:last-child:nth-child(even):before{
+    right: auto;
+    left: -12px;
+    bottom: -2px;
+}
+
+/*.main-timeline .timeline-content{
+    text-align: center;
+    margin-top: 8px;
+    position: relative;
+    transition: all 0.3s ease 0s;
+}*/
+
+.main-timeline .content{
+    text-align: center;
+    display: table;
+    /*padding-right: 40px;*/
+    position: relative;
+    /*border: 1px solid grey;*/
+    border-radius: 15px;
+}
+
+/*Work to be done -- on hover*/
+.main-timeline .content:hover{
+    /*border: 1px solid grey;*/
+    border-radius: 15px;
+}
+
+
+.main-timeline .title{
+    font-size: 1rem;
+    font-weight: lighter;
+    font-family: "Helvetica Neue";
+    /*color: #cca872;*/
+    /*font-weight: lighter;*/
+    text-align: left;
+    margin-top: 0;
+}
+.main-timeline .description{
+    font-size: 0.8rem;
+    opacity: 0.7;
+    /*color: #a6a6a6;*/
+    text-align: justify;
+}
+
+.main-timeline .timeline:nth-child(2){
+    margin-top: 160px;
+}
+.main-timeline .timeline:nth-child(odd){
+    margin: -115px 0 0 0;
+}
+.main-timeline .timeline:nth-child(even){
+    margin-bottom: 102px;
+}
+
+.main-timeline .timeline:first-child,
+.main-timeline .timeline:last-child:nth-child(even){
+    margin: 0;
+}
+@media only screen and (max-width: 990px){
+    .main-timeline:before{ left: 100%; }
+    .main-timeline .timeline{
+        width: 100%;
+        float: none;
+        margin-bottom: 20px !important;
+    }
+    .main-timeline .timeline:first-child:before,
+    .main-timeline .timeline:last-child:before{
+        left: auto !important;
+        right: -13px !important;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle{
+        float: left;
+        margin: 0 25px 0 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle:before{
+        right: -33px;
+        left: auto;
+        box-shadow: 7px 0 9px -7px #444 inset;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle span:before,
+    .main-timeline .timeline:nth-child(2n) .circle span:after{
+        right: -33px;
+        left: auto;
+        border-radius: 0 0 0 21px;
+    }
+    .main-timeline .timeline:nth-child(2n) .circle span:after{
+        border-radius: 21px 0 0 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .content{
+        padding: 0 40px 0 0;
+        margin-left: 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon{
+        right: -14px;
+        left: auto;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon:before,
+    .main-timeline .timeline:nth-child(2n) .icon span:before,
+    .main-timeline .timeline:nth-child(2n) .icon span:after{
+        left: -15px;
+        right: auto;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon span:before{
+        border-radius: 0 0 21px 0;
+    }
+    .main-timeline .timeline:nth-child(2n) .icon span:after{
+        border-radius: 0 21px 0 0;
+    }
+    .main-timeline .timeline:nth-child(2),
+    .main-timeline .timeline:nth-child(odd),
+    .main-timeline .timeline:nth-child(even){
+        margin: 0;
+    }
+}
+@media only screen and (max-width: 480px){
+    .main-timeline:before{ left: 0; }
+    .main-timeline .timeline:first-child:before,
+    .main-timeline .timeline:last-child:before{
+        left: -12px !important;
+        right: auto !important;
+    }
+    .main-timeline .circle,
+    .main-timeline .timeline:nth-child(2n) .circle{
+        width: 130px;
+        height: 130px;
+        float: none;
+        margin: 0 auto;
+    }
+    .main-timeline .timeline-content:before{
+        width: 99.5%;
+        top: 68px;
+        left: 0.5%;
+    }
+    .main-timeline .circle span{
+        line-height: 115px;
+        font-size: 60px;
+    }
+    .main-timeline .circle:before,
+    .main-timeline .circle span:before,
+    .main-timeline .circle span:after,
+    .main-timeline .icon{
+        display: none;
+    }
+    .main-timeline .content,
+    .main-timeline .timeline:nth-child(2n) .content{
+        padding: 0 10px;
+    }
+    .main-timeline .year{
+        margin-bottom: 15px;
+    }
+    .main-timeline .description{
+        text-align: center;
+    }
+}
+
+/*========== Experience Ends ==========*/
+
+/*========== Contact Me Begins ==========*/
 .contact_details {
     line-height: 1.5;
     opacity: 0.7;

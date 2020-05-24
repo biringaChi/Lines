@@ -44,7 +44,7 @@
     <div class="container intro_container">
     <div class="row justify-content-start align-items-center">
         <div class="col-md-12 py-2 col-sm-6" >
-            <div class="intro_container">
+            <div class="intro_con">
                 <p class="typewrite"> Hi, my name is </p>
                 <p class="intro_content"> Chidera Biringa </p>
                 <div id = "about"></div>
@@ -57,9 +57,9 @@
 
     <!-- About Me Begins -->
     <div class="container about_me_container">
+        <p class="section_headers"> <span> About Me </span> </p>
         <div class="row justify-content-center about_me_my_row">
-            <div class="col-md-5 py-2 col-sm-6 about_me_my_col" >
-                <p class="section_headers" id="about_me"> About Me </p>
+            <div class="col-md-5 col-sm-6 about_me_my_col" >
                 <div class="about_me_content">
                     <p> Hey there, I'm Chi, I am a graduate student, studying Computer Science at the University of Massachusetts-Dartmouth. </p>
 
@@ -73,8 +73,10 @@
                  </div>
             </div>
 
-            <div class="col-md-2 col-sm-6 pt-4 pr-0 mt-4 mb-5 about_me_my_col">
-                <div class="image_placement hovereffect_ab overlay_ab">
+            <div class="col-md-2 col-sm-6">
+                <div class="image_placement hovereffect_ab">
+                    <div class="overlay_ab">
+                    </div>
                     <img class="profile_picture img-responsive" width="60%", height="60%" src="images/profile_picture.jpg" alt="Profile Picture"/>
                 </div>
 
@@ -86,35 +88,33 @@
 
     <!-- Projects Begins -->
     <div class="container projects_container">
-        <p class="section_headers"> Personal and Academic Projects </p>
-        <div class="row mt-1 justify-content-start projects_my_row">
+        <p class="section_headers"> <span> Projects </span> </p>
+        <div class="row mt-1 justify-content-center projects_my_row">
 
             <!-- Row 1 Col 1 -->
-            <div class="col-md-6 py-4 col-sm-6 projects_my_col">
+            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" width="100%", height="100%" src="./images/pif.png" alt="Predictive Inference Frame (PIF) Model"/>
                         <div class="projects_content">
-                            <h6> PIF Model: An AI model to predict and generate video frames</h6>
-                            <p> An Artificial Intelligence model that could infer a new frame between two existing sequential
+                            <p class="projects_intro"> PIF Model: An AI model to predict and generate video frames</p>
+                            <p> An Artificial Intelligence model that can infer a new frame between two existing sequential
                                 frames of a video We trained a GAN neural network framework using youtube footage to predict its own existing frames.
                                 The model which was able to infer new frames from high definition videos. Furthermore, the model was able to generate new videos from input data sample.
                                 Our model works by splitting a video into contigous frames categorized as scenes, these scenes are processed and passed into the generator network which
                                 generates new video frames.
                             </p>
-
-                                <p> Github Repository: &nbsp; <a class="github fab fa-github" href="https://github.com/biringaChi/PIF-Model" target="_blank"> </a>
-                                    &emsp; Technology Used: &nbsp; <i class="fab fa-python"></i>
-                                </p>
+                            <p class="github_pill"> <a href="https://github.com/biringaChi/PIF-Model" target="_blank">View on Github</a></p>
+                            <!-- &nbsp; <i class="fab fa-python"></i> -->
                         </div>
                 </div>
             </div>
 
             <!-- Row 1 Col 2 -->
-            <div class="col-md-6 py-4 col-sm-6 projects_my_col">
+            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" width="100%", height="100%" src="./images/sql.png" alt="SQL Query Evaluator"/>
                         <div class="projects_content">
-                            <h6> SQL Query Evaluator: An SQL engine to evaluate sql queries </h6>
+                            <p class="projects_intro"> SQL Query Evaluator: An SQL engine to evaluate sql queries </p>
                             <p> An SQL query evaluator for a single-threaded database that can run TPC-H queries.
                                 It has operational support for Select, Project, Join, Union, Aggregate operations and implements
                                 standard optimization techniques such as projection pushdown, selection pushdown and cross product to join conversion.
@@ -122,46 +122,41 @@
                                 representational schema for the data and performs filtering and other operations on the data.
                                 The result of these operations will be in a standardized row-oriented data form.
                             </p>
-                                <p class="technologies"> Github Repository: &nbsp; <a class="github fab fa-github" href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank"></a>
-                                    &emsp; Technologies Used: &nbsp; <i class="fab fa-java"></i> &nbsp; <i class="fas fa-database"> </i>
-                                </p>
+                            <p class="github_pill"> <a href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank">View on Github</a></p>
+                            <!-- <i class="fab fa-java"></i> &nbsp; <i class="fas fa-database"> </i> -->
                         </div>
                 </div>
             </div>
         </div>
 
     <!-- Begin Row 2 -->
-        <div class="row mt-1 justify-content-start projects_my_row">
-            <div class="col-md-6 py-4 col-sm-6 projects_my_col">
+        <div class="row mt-1 justify-content-center projects_my_row">
+            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" width="100%", height="100%" src="./images/Authorship_Attribution.png" alt="Predictive Inference Frame (PIF) Model"/>
                         <div class="projects_content">
-                            <h6> Authorship Attribution : A machine learning classification model </h6>
+                            <p class="projects_intro"> Authorship Attribution : A machine learning classification model </p>
                             <p> A classification model to predict authors based on sentiments.
                                 Experiments on books that are extracted from Victorian Era Authors datasets by using different features
                                 such as bag of words, n-grams or TF-IDF models.
                             </p>
-
-                                <p> Github Repository: &nbsp; <a class="github fab fa-github" href="https://github.com/biringaChi/PIF-Model" target="_blank"> </a>
-                                    &emsp; Technology Used: &nbsp; <i class="fab fa-r-project"></i>
-
-                                </p>
+                            <p class="github_pill"> <a href="https://github.com/biringaChi/Authorship-Attribution" target="_blank">View on Github</a></p>
+                             <!-- &emsp; <i class="fab fa-r-project"></i> -->
                         </div>
                 </div>
             </div>
 
-            <div class="col-md-6 py-4 col-sm-6 projects_my_col">
+            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <!-- Row 1 Col 2 -->
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" width="100%", height="100%" src="./images/chatbot_1.png" alt="SQL Query Evaluator"/>
                         <div class="projects_content">
-                            <h6> Customer Response Chatbot: An AI-powered chatbot </h6>
+                            <p class="projects_intro"> Customer Response Chatbot: An AI-powered chatbot </p>
                             <p> An AI model to predict reponses to questions ask by customers to their favorite brands. Using twitter dataset comprising of top companies, i was able to ...
                                 The model was able to predict 3 correct responses from 5 sequential questions.
                             </p>
-                                <p class="technologies"> Github Repository: &nbsp; <a class="github fab fa-github" href="https://github.com/biringaChi/Chatbot" target="_blank"></a>
-                                    &emsp; Technologies Used: &nbsp; <i class="fab fa-r-project"></i>
-                                </p>
+                                <p class="github_pill"> <a href="https://github.com/biringaChi/Chatbot" target="_blank">View on Github</a></p>
+                                    <!-- Technologies Used: &nbsp; <i class="fab fa-r-project"></i> -->
                         </div>
                 </div>
             </div>
@@ -173,15 +168,67 @@
 
     <!-- Experience Begins -->
     <div class="container experience_container">
-        <p class="section_headers"> Experience </p>
+        <p class="section_headers"><span> Experience </span> </p>
 
         <div class="row mt-1 justify-content-center projects_my_row">
             <!-- Row 1 Col 1 -->
-            <div class="col-md-12 py-4 col-sm-6 projects_my_col">
-
-            </div>
+            <div class="col-md-8 col-sm-6 projects_my_col">
+                <div class="main-timeline">
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <!-- <div class="circle"><span><i class="fa fa-globe"></i></span></div> -->
+                        <div class="content">
+                            <h4 class="title"> Grader <i class="fas fa-at text-white-50"></i> UMassD </h4>
+                            <!-- <span class="year">2013 - 2014</span> -->
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus justo. Nam ultricies laoreet massa sed maximus. Curabitur tristique sagittis scelerisque. Vivamus posuere nisi quis tortor interdum, in finibus risus convallis. Suspendisse efficitur lacus a nulla commodo, sit amet vestibulum nibh.
+                            </p>
+                            <!-- <div class="icon"><span></span></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <!-- <div class="circle"><span><i class="fa fa-rocket"></i></span></div> -->
+                        <div class="content">
+                            <!-- <span class="year">2014 - 2015</span> -->
+                            <h4 class="title"> Teaching Assistant <i class="fas fa-at text-white-50"></i> UMassD </h4>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus justo. Nam ultricies laoreet massa sed maximus. Curabitur tristique sagittis scelerisque. Vivamus posuere nisi quis tortor interdum, in finibus risus convallis. Suspendisse efficitur lacus a nulla commodo, sit amet vestibulum nibh.
+                            </p>
+                            <!-- <div class="icon"><span></span></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <!-- <div class="circle"><span><i class="fa fa-briefcase"></i></span></div> -->
+                        <div class="content">
+                            <!-- <span class="year">2015 - 2016</span> -->
+                            <h4 class="title"> Teacher <i class="fas fa-at text-white-50"></i> </h4>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus justo. Nam ultricies laoreet massa sed maximus. Curabitur tristique sagittis scelerisque. Vivamus posuere nisi quis tortor interdum, in finibus risus convallis. Suspendisse efficitur lacus a nulla commodo, sit amet vestibulum nibh.
+                            </p>
+                            <!-- <div class="icon"><span></span></div> -->
+                        </div>
+                    </div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-content">
+                        <!-- <div class="circle"><span><i class="fa fa-briefcase"></i></span></div> -->
+                        <div class="content">
+                            <!-- <span class="year">2015 - 2016</span> -->
+                            <h4 class="title"> Software Engineer <i class="fas fa-at text-white-50"></i> </h4>
+                            <p class="description">
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce non lectus justo. Nam ultricies laoreet massa sed maximus. Curabitur tristique sagittis scelerisque. Vivamus posuere nisi quis tortor interdum, in finibus risus convallis. Suspendisse efficitur lacus a nulla commodo, sit amet vestibulum nibh.
+                            </p>
+                            <!-- <div class="icon"><span></span></div> -->
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
+    </div>
 
 
     <!-- <Experience Ends -->
@@ -207,7 +254,7 @@
 
           <div class="col-md-12 py-5">
             <div class="mb-4 flex-center">
-                <div class="section_headers" id="contact"> <spnan> Contact Me </spnan> </div>
+                <div class="section_headers" id="contact"> <span> Contact Me </span> </div>
                 <div class="contact_details">
                     <p> <i class="far fa-address-book"> </i> New Bedford Massachusetts MA 02740 </p>
                     <p> <i class="fas fa-mobile-alt"></i> +1(508) 863-7923 </p>
