@@ -15,51 +15,51 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
 
+
 </head>
 <!-- Head Ends -->
 
 <!-- Body Begins -->
 <body>
     <div class="header_container">
-                                     <!-- navbar-dark -->
       <nav class="navbar fixed-top navbar-expand-sm list-unstyled">
-        <!-- <a id="header_brand" href="index.html" class="navbar-brand fas fa-coffee"></a> -->
         <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarMenu">
-            <span class="navbar-toggler-icon"></span>
+            <span class="text-white-50"><i class="fas fa-bars fa-1x"></i></span>
         </button>
-        <div class="collapse navbar-collapse">
+
+        <div class="collapse navbar-collapse" id="navbarMenu">
             <a href="index.html"><img class="logo img-responsive" width="50px", height="50px" src="images/logo_2.png" alt="logo"></a>
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="#about" target="_self" class="nav-link active scroll">About</a></li>
-                <li class="nav-item"><a href="#projects" target="_self" class="nav-link scroll">Projects</a></li>
-                <li class="nav-item"><a href="#experience" target="_self" class="nav-link scroll">Experience</a></li>
-                <li class="nav-item"><a href="#contact" target="_self" class="nav-link scroll">Contact</a></li>
-                <li class="nav-item"><a href="./resume/resume.pdf" target="_blank" class="nav-link scroll resume_header">Resume</a></li>
+                <li class="nav-item"><a href="#about" target="_self" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="#projects" target="_self" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#experience" target="_self" class="nav-link">Experience</a></li>
+                <li class="nav-item"><a href="#contact" target="_self" class="nav-link">Contact</a></li>
+                <li class="nav-item"><a href="./resume/resume.pdf" target="_blank" class="nav-link resume_header">Resume</a></li>
             </ul>
         </div>
     </nav>
     </div>
 
     <!-- Introduction -->
-    <div class="container">
+    <div class="container intro_container">
     <div class="row justify-content-start align-items-center">
         <div class="col-md-12 py-2 col-sm-6" >
             <div class="intro_container">
                 <p class="typewrite"> Hi, my name is </p>
-                <div id = "about"></div>
                 <p class="intro_content"> Chidera Biringa </p>
+                <div id = "about"></div>
                 <p class="typewrite" data-period="1000" data-type='["I code.", "I design.", "I wrangle data.", "I build ML apps."]'> <span class="wrap"></span> </p>
             </div>
         </div>
     </div>
     </div>
-
+    <!-- Introduction Ends -->
 
     <!-- About Me Begins -->
-    <div class="container mt-5" id="about_me_container">
-        <div class="row justify-content-start align-items-center about_me_my_row">
+    <div class="container about_me_container">
+        <div class="row justify-content-center about_me_my_row">
             <div class="col-md-5 py-2 col-sm-6 about_me_my_col" >
-                <div class="about_me_header" id="about_me"> About Me </div>
+                <p class="section_headers" id="about_me"> About Me </p>
                 <div class="about_me_content">
                     <p> Hey there, I'm Chi, I am a graduate student, studying Computer Science at the University of Massachusetts-Dartmouth. </p>
 
@@ -73,31 +73,33 @@
                  </div>
             </div>
 
-            <div class="col-md-4 col-sm-6 pt-1 about_me_my_col">
+            <div class="col-md-2 col-sm-6 pt-4 pr-0 mt-4 mb-5 about_me_my_col">
                 <div class="image_placement hovereffect_ab overlay_ab">
-                    <img class="profile_picture img-responsive" width="30%", height="70%" src="images/profile_picture.jpg" alt="Profile Picture"/>
+                    <img class="profile_picture img-responsive" width="60%", height="60%" src="images/profile_picture.jpg" alt="Profile Picture"/>
                 </div>
+
                 <div id = "projects"></div>
             </div>
         </div>
     </div>
     <!-- About Me Ends -->
 
-
     <!-- Projects Begins -->
-    <div class="container mt-5 projects_container">
-        <div class="projects_header"> Projects </div>
-
-        <!-- Begin Row 1 -->
+    <div class="container projects_container">
+        <p class="section_headers"> Personal and Academic Projects </p>
         <div class="row mt-1 justify-content-start projects_my_row">
+
+            <!-- Row 1 Col 1 -->
             <div class="col-md-6 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" width="100%", height="100%" src="./images/pif.png" alt="Predictive Inference Frame (PIF) Model"/>
                         <div class="projects_content">
-                            <h6> PIF Model: An AI Model to predict and generate video frames</h6>
-                            <p> In this project, we built an AI model that could infer a new frame between two existing sequential
+                            <h6> PIF Model: An AI model to predict and generate video frames</h6>
+                            <p> An Artificial Intelligence model that could infer a new frame between two existing sequential
                                 frames of a video We trained a GAN neural network framework using youtube footage to predict its own existing frames.
-                                The model which was able to infer new frames from high definition videos. Furthermore, we were able to generate new videos from ......
+                                The model which was able to infer new frames from high definition videos. Furthermore, the model was able to generate new videos from input data sample.
+                                Our model works by splitting a video into contigous frames categorized as scenes, these scenes are processed and passed into the generator network which
+                                generates new video frames.
                             </p>
 
                                 <p> Github Repository: &nbsp; <a class="github fab fa-github" href="https://github.com/biringaChi/PIF-Model" target="_blank"> </a>
@@ -107,13 +109,13 @@
                 </div>
             </div>
 
+            <!-- Row 1 Col 2 -->
             <div class="col-md-6 py-4 col-sm-6 projects_my_col">
-                <!-- Row 1 Col 2 -->
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" width="100%", height="100%" src="./images/sql.png" alt="SQL Query Evaluator"/>
                         <div class="projects_content">
                             <h6> SQL Query Evaluator: An SQL engine to evaluate sql queries </h6>
-                            <p> My teammates and I built an SQL query evaluator for a single-threaded database that can run TPC-H queries.
+                            <p> An SQL query evaluator for a single-threaded database that can run TPC-H queries.
                                 It has operational support for Select, Project, Join, Union, Aggregate operations and implements
                                 standard optimization techniques such as projection pushdown, selection pushdown and cross product to join conversion.
                                 Our program will receive an SQL File with a collection of CREATE TABLE and SELECT statements. These statements define a
@@ -126,24 +128,23 @@
                         </div>
                 </div>
             </div>
-
-        <!-- End Row 1 -->
         </div>
 
     <!-- Begin Row 2 -->
         <div class="row mt-1 justify-content-start projects_my_row">
             <div class="col-md-6 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
-                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/pif.png" alt="Predictive Inference Frame (PIF) Model"/>
+                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/Authorship_Attribution.png" alt="Predictive Inference Frame (PIF) Model"/>
                         <div class="projects_content">
-                            <h6> PIF Model: An AI Model to predict and generate video frames</h6>
-                            <p> In this project, we built an AI model that could infer a new frame between two existing sequential
-                                frames of a video We trained a GAN neural network framework using youtube footage to predict its own existing frames.
-                                The model which was able to infer new frames from high definition videos. Furthermore, we were able to generate new videos from ......
+                            <h6> Authorship Attribution : A machine learning classification model </h6>
+                            <p> A classification model to predict authors based on sentiments.
+                                Experiments on books that are extracted from Victorian Era Authors datasets by using different features
+                                such as bag of words, n-grams or TF-IDF models.
                             </p>
 
                                 <p> Github Repository: &nbsp; <a class="github fab fa-github" href="https://github.com/biringaChi/PIF-Model" target="_blank"> </a>
-                                    &emsp; Technology Used: &nbsp; <i class="fab fa-python"></i>
+                                    &emsp; Technology Used: &nbsp; <i class="fab fa-r-project"></i>
+
                                 </p>
                         </div>
                 </div>
@@ -152,55 +153,45 @@
             <div class="col-md-6 py-4 col-sm-6 projects_my_col">
                 <!-- Row 1 Col 2 -->
                 <div class="projects_image_placement hovereffect_2">
-                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/Chatbot.png" alt="SQL Query Evaluator"/>
+                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/chatbot_1.png" alt="SQL Query Evaluator"/>
                         <div class="projects_content">
-                            <h6> SQL Query Evaluator: An SQL engine to evaluate sql queries </h6>
-                            <p> My teammates and I built an SQL query evaluator for a single-threaded database that can run TPC-H queries.
-                                It has operational support for Select, Project, Join, Union, Aggregate operations and implements
-                                standard optimization techniques such as projection pushdown, selection pushdown and cross product to join conversion.
-                                Our program will receive an SQL File with a collection of CREATE TABLE and SELECT statements. These statements define a
-                                representational schema for the data and performs filtering and other operations on the data.
-                                The result of these operations will be in a standardized row-oriented data form.
+                            <h6> Customer Response Chatbot: An AI-powered chatbot </h6>
+                            <p> An AI model to predict reponses to questions ask by customers to their favorite brands. Using twitter dataset comprising of top companies, i was able to ...
+                                The model was able to predict 3 correct responses from 5 sequential questions.
                             </p>
-                                <p class="technologies"> Github Repository: &nbsp; <a class="github fab fa-github" href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank"></a>
-                                    &emsp; Technologies Used: &nbsp; <i class="fab fa-java"></i> &nbsp; <i class="fas fa-database"> </i>
+                                <p class="technologies"> Github Repository: &nbsp; <a class="github fab fa-github" href="https://github.com/biringaChi/Chatbot" target="_blank"></a>
+                                    &emsp; Technologies Used: &nbsp; <i class="fab fa-r-project"></i>
                                 </p>
                         </div>
                 </div>
             </div>
-
-        <!-- End Row 2 -->
         </div>
-
-    </div>
-
-    <div class="container mt-5 projects_container">
-        <!-- Begin Row 2 -->
-
-         <!-- Row 2 Col 2 -->
-        <div class="row justify-content-start projects_my_row">
-            <div class="col-md-6 mt-0 col-sm-6 projects_my_col">
-            </div>
-
-            <!-- Row 2 Col 2 -->
-            <div class="col-md-6 py-0 col-sm-6 projects_my_col">
-            </div>
-            </div>
-
-        <!-- End Row 2 -->
-        </div>
-
+        <div id = "experience"></div>
     </div>
 
     <!-- Projects Ends -->
 
     <!-- Experience Begins -->
+    <div class="container experience_container">
+        <p class="section_headers"> Experience </p>
+
+        <div class="row mt-1 justify-content-center projects_my_row">
+            <!-- Row 1 Col 1 -->
+            <div class="col-md-12 py-4 col-sm-6 projects_my_col">
+
+            </div>
+            </div>
+        </div>
 
 
     <!-- <Experience Ends -->
 
     <script src="js/script.js"></script>
-    <!-- Dependemcoes -->
+    <!-- Dependenioes -->
+     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+     <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+     <script src="js/experience.js"></script>
+
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -216,7 +207,7 @@
 
           <div class="col-md-12 py-5">
             <div class="mb-4 flex-center">
-                <div class="contact_header" id="contact"> <spnan> Contact Me </spnan> </div>
+                <div class="section_headers" id="contact"> <spnan> Contact Me </spnan> </div>
                 <div class="contact_details">
                     <p> <i class="far fa-address-book"> </i> New Bedford Massachusetts MA 02740 </p>
                     <p> <i class="fas fa-mobile-alt"></i> +1(508) 863-7923 </p>
