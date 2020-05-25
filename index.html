@@ -28,14 +28,14 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarMenu">
-            <a href="index.html"><img class="logo img-responsive" width="50px", height="50px" src="images/logo_2.png" alt="logo"></a>
+            <a href="index.html"><img class="logo img-responsive" width="50px", height="50px" src="images/logo.png" alt="logo"></a>
             <ul class="navbar-nav">
-                <li class="nav-item"><a href="#about" target="_self" class="nav-link active">About</a></li>
+                <li class="nav-item"><a href="#about" target="_self" class="nav-link">About</a></li>
                 <li class="nav-item"><a href="#projects" target="_self" class="nav-link">Projects</a></li>
                 <li class="nav-item"><a href="#experience" target="_self" class="nav-link">Experience</a></li>
                 <li class="nav-item"><a href="#contact" target="_self" class="nav-link">Contact</a></li>
-                <li class="nav-item"><a href="./resume/resume.pdf" target="_blank" class="nav-link resume_header">Resume</a></li>
             </ul>
+            <a class="resume_header" href="./resume/resume.pdf" target="_blank">Resume</a>
         </div>
     </nav>
     </div>
@@ -48,7 +48,7 @@
                 <p class="typewrite"> Hi, my name is </p>
                 <p class="intro_content"> Chidera Biringa </p>
                 <div id = "about"></div>
-                <p class="typewrite" data-period="1000" data-type='["I code.", "I design.", "I wrangle data.", "I build ML apps."]'> <span class="wrap"></span> </p>
+                <p class="typewrite" data-period="1000" data-type='["I code.", "I design.", "I wrangle data.", "I build AI Models."]'> <span class="wrap"></span> </p>
             </div>
         </div>
     </div>
@@ -61,14 +61,14 @@
         <div class="row justify-content-center about_me_my_row">
             <div class="col-md-5 col-sm-6 about_me_my_col" >
                 <div class="about_me_content">
-                    <p> Hey there, I'm Chi, I am a graduate student, studying Computer Science at the University of Massachusetts-Dartmouth. </p>
+                    <p> Hey there, I'm Chi, a graduate student studying Computer Science at the University of Massachusetts-Dartmouth. </p>
 
                     <p> I have a strong technical background in descriptive and predictive analysis.
                     Super interested in the manipulation and interpretation of data to derive pertinent insights. </p>
 
                     <div id = "resume"></div>
                     <p> I have taken advanced courses in Data Mining and Machine Learning that helped bridge my knowledge gap between
-                    theoretical understanding and programmatic implementation of machine learning applications </p>
+                    theoretical understanding and programmatic implementation of machine learning applications. </p>
 
                  </div>
             </div>
@@ -89,22 +89,41 @@
     <!-- Projects Begins -->
     <div class="container projects_container">
         <p class="section_headers"> <span> Projects </span> </p>
-        <div class="row mt-1 justify-content-center projects_my_row">
 
+        <!-- Begin Row 1 -->
+        <div class="row mt-1 justify-content-center projects_my_row">
+            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
+                <div class="projects_image_placement hovereffect_2">
+                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/lines.png" alt="Lines"/>
+                        <div class="projects_content">
+                            <p class="projects_intro"> Lines: Personal portfolio Website V1 </p>
+                            <p> A simple single page personal website to showcase some of my work </p>
+
+                            <div class="technologies"> <i class="fab fa-html5"></i> &nbsp; <i class="fab fa-css3"></i> &nbsp; <i class="fab fa-js-square"></i> </div>
+                            <p class="github_pill"> <a href="https://github.com/biringaChi/Lines" target="_blank">View on Github</a></p>
+
+                        </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Begin Row 2 -->
+        <div class="row mt-1 justify-content-center projects_my_row">
             <!-- Row 1 Col 1 -->
             <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" width="100%", height="100%" src="./images/pif.png" alt="Predictive Inference Frame (PIF) Model"/>
                         <div class="projects_content">
                             <p class="projects_intro"> PIF Model: An AI model to predict and generate video frames</p>
-                            <p> An Artificial Intelligence model that can infer a new frame between two existing sequential
-                                frames of a video We trained a GAN neural network framework using youtube footage to predict its own existing frames.
-                                The model which was able to infer new frames from high definition videos. Furthermore, the model was able to generate new videos from input data sample.
-                                Our model works by splitting a video into contigous frames categorized as scenes, these scenes are processed and passed into the generator network which
-                                generates new video frames.
+                            <p> An Artificial Intelligence model that can infer a new frame between two existing sequential frames of a video.
+                                We trained a GAN neural network framework using youtube footage to predict its existing frames.
+                                The model was able to infer new frames from high definition videos. Furthermore, the model was able to generate new videos
+                                from the input data sample. Our model works by splitting a video into contiguous frames categorized as scenes,
+                                these scenes are processed and passed into the generator network which generates new video frames.
                             </p>
-                            <p class="github_pill"> <a href="https://github.com/biringaChi/PIF-Model" target="_blank">View on Github</a></p>
-                            <!-- &nbsp; <i class="fab fa-python"></i> -->
+                            <div class="technologies"> <i class="fab fa-python"></i> &nbsp; PyTorch &nbsp; NumPy </div>
+                            <p class="github_pill"> <a href="https://github.com/biringaChi/Lines" target="_blank">View on Github</a></p>
+
                         </div>
                 </div>
             </div>
@@ -115,33 +134,37 @@
                     <img class="sql_img img-responsive" width="100%", height="100%" src="./images/sql.png" alt="SQL Query Evaluator"/>
                         <div class="projects_content">
                             <p class="projects_intro"> SQL Query Evaluator: An SQL engine to evaluate sql queries </p>
-                            <p> An SQL query evaluator for a single-threaded database that can run TPC-H queries.
-                                It has operational support for Select, Project, Join, Union, Aggregate operations and implements
-                                standard optimization techniques such as projection pushdown, selection pushdown and cross product to join conversion.
-                                Our program will receive an SQL File with a collection of CREATE TABLE and SELECT statements. These statements define a
-                                representational schema for the data and performs filtering and other operations on the data.
-                                The result of these operations will be in a standardized row-oriented data form.
+                            <p> An SQL query evaluator for a single-threaded database that can run TPC-H queries. It has operational support for
+                                Select, Project, Join, Union, Aggregate operations, and implements standard optimization techniques such as
+                                projection pushdown, selection pushdown, and cross-product to join conversion. Our program will receive an
+                                SQL File with a collection of CREATE TABLE and SELECT statements. These statements define a representational
+                                schema for the data and perform filtering and other operations on the data. The result of these operations will
+                                be in a standardized row-oriented data form.
                             </p>
-                            <p class="github_pill"> <a href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank">View on Github</a></p>
-                            <!-- <i class="fab fa-java"></i> &nbsp; <i class="fas fa-database"> </i> -->
+
+                            <div class="technologies"> <i class="fab fa-java"></i> &nbsp; SQL </div>
+                            <p class="github_pill"> <a href="https://github.com/biringaChi/Lines" target="_blank">View on Github</a></p>
+
                         </div>
                 </div>
             </div>
         </div>
 
-    <!-- Begin Row 2 -->
+    <!-- Begin Row 3 -->
         <div class="row mt-1 justify-content-center projects_my_row">
             <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" width="100%", height="100%" src="./images/Authorship_Attribution.png" alt="Predictive Inference Frame (PIF) Model"/>
                         <div class="projects_content">
-                            <p class="projects_intro"> Authorship Attribution : A machine learning classification model </p>
+                            <p class="projects_intro"> Authorship Attribution: A machine learning classification model </p>
                             <p> A classification model to predict authors based on sentiments.
-                                Experiments on books that are extracted from Victorian Era Authors datasets by using different features
-                                such as bag of words, n-grams or TF-IDF models.
+                                Experiments on books that are extracted from Victorian Era Authors datasets by using different
+                                features such as bag-of-words, n-grams, and TF-IDF models.
                             </p>
-                            <p class="github_pill"> <a href="https://github.com/biringaChi/Authorship-Attribution" target="_blank">View on Github</a></p>
-                             <!-- &emsp; <i class="fab fa-r-project"></i> -->
+
+                            <div class="technologies"> <i class="fab fa-r-project"></i> &nbsp; Tidyverse &nbsp; quanteda </div>
+                            <p class="github_pill"> <a href="https://github.com/biringaChi/Lines" target="_blank">View on Github</a></p>
+
                         </div>
                 </div>
             </div>
@@ -149,34 +172,20 @@
             <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <!-- Row 1 Col 2 -->
                 <div class="projects_image_placement hovereffect_2">
-                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/chatbot_1.png" alt="SQL Query Evaluator"/>
+                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/chatbot.png" alt="SQL Query Evaluator"/>
                         <div class="projects_content">
                             <p class="projects_intro"> Customer Response Chatbot: An AI-powered chatbot </p>
-                            <p> An AI model to predict reponses to questions ask by customers to their favorite brands. Using twitter dataset comprising of top companies, i was able to ...
-                                The model was able to predict 3 correct responses from 5 sequential questions.
+                            <p> An AI model to predict responses to questions asked by customers to their favorite brands.
+                                Using twitter dataset comprising of top companies. The model was able to predict an
+                                average of 3 intelligible responses from 5 sequential questions.
                             </p>
-                                <p class="github_pill"> <a href="https://github.com/biringaChi/Chatbot" target="_blank">View on Github</a></p>
-                                    <!-- Technologies Used: &nbsp; <i class="fab fa-r-project"></i> -->
+                            <div class="technologies"> <i class="fab fa-r-project"></i> &nbsp; quanteda &nbsp; caret </div>
+                            <p class="github_pill"> <a href="https://github.com/biringaChi/Lines" target="_blank">View on Github</a></p>
                         </div>
                 </div>
             </div>
         </div>
 
-        <!-- Begin Row 3 -->
-        <div class="row mt-1 justify-content-center projects_my_row">
-            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
-                <div class="projects_image_placement hovereffect_2">
-                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/Chatbot.png" alt="Predictive Inference Frame (PIF) Model"/>
-                        <div class="projects_content">
-                            <p class="projects_intro"> Lines: Personal Website V1 </p>
-                            <p> A simple single personal website to showcase some of my work </p>
-
-                            <p class="github_pill"> <a href="https://github.com/biringaChi/biringachidera.com" target="_blank">View on Github</a></p>
-                             <!-- &emsp; <i class="fab fa-r-project"></i> -->
-                        </div>
-                </div>
-            </div>
-        </div>
         </div>
         <div id = "experience"></div>
     </div>
@@ -196,9 +205,9 @@
                         <!-- <div class="circle"><span><i class="fa fa-globe"></i></span></div> -->
                         <div class="content">
                             <h4 class="title"> Grader <i class="fas fa-at text-white-50"></i> UMassD </h4>
-                            <!-- <span class="year">2013 - 2014</span> -->
+                            <p class="date"> September - December, 2019 </p>
                             <p class="description">
-                                Graded assignments, projects and exams for a course on Software Process and Project Management
+                                <i class="fas fa-angle-double-right"></i> Graded assignments, projects and exams for a course on Software Process and Project Management
                             </p>
                             <!-- <div class="icon"><span></span></div> -->
                         </div>
@@ -208,12 +217,11 @@
                     <div class="timeline-content">
                         <!-- <div class="circle"><span><i class="fa fa-rocket"></i></span></div> -->
                         <div class="content">
-                            <!-- <span class="year">2014 - 2015</span> -->
                             <h4 class="title"> Teaching Assistant <i class="fas fa-at text-white-50"></i> UMassD </h4>
+                            <p class="date">September, 2019</p>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <i class="fas fa-angle-double-right"></i> Taught computer programming using Swift programming language
                             </p>
-                            <!-- <div class="icon"><span></span></div> -->
                         </div>
                     </div>
                 </div>
@@ -221,12 +229,12 @@
                     <div class="timeline-content">
                         <!-- <div class="circle"><span><i class="fa fa-briefcase"></i></span></div> -->
                         <div class="content">
-                            <!-- <span class="year">2015 - 2016</span> -->
-                            <h4 class="title"> Teacher <i class="fas fa-at text-white-50"></i> </h4>
+                            <h4 class="title"> Teacher <i class="fas fa-at text-white-50"></i> AO High School </h4>
+                            <p class="date">May 2017 - April, 2018</p>
                             <p class="description">
-                                Taught computer programming using Swift programming language
+                                <i class="fas fa-angle-double-right"></i> Taught Information Technology to 9th grade student <br>
+                                <i class="fas fa-angle-double-right"></i> Taught Mathematics to 12th grade student
                             </p>
-                            <!-- <div class="icon"><span></span></div> -->
                         </div>
                     </div>
                 </div>
@@ -234,10 +242,11 @@
                     <div class="timeline-content">
                         <!-- <div class="circle"><span><i class="fa fa-briefcase"></i></span></div> -->
                         <div class="content">
-                            <!-- <span class="year">2015 - 2016</span> -->
-                            <h4 class="title"> Software Engineer <i class="fas fa-at text-white-50"></i> </h4>
+                            <h4 class="title"> Software Engineer <i class="fas fa-at text-white-50"></i> NNPC </h4>
+                            <p class="date">May - August, 2015</p>
                             <p class="description">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                <i class="fas fa-angle-double-right"></i> Developed webpages for the engineering section of the company <br>
+                                <i class="fas fa-angle-double-right"></i> Designed strategies to improve the performance of in-house crudeoil processing software <br>
                             </p>
                             <!-- <div class="icon"><span></span></div> -->
                         </div>
