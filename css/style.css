@@ -14,7 +14,6 @@ body {
   color: #fff;
   height: 100%;
   font-size: 1rem;
-  font-family: "Helvetica Neue"; Montserrat, sans-serif;
   font-weight: lighter;
 }
 
@@ -118,7 +117,7 @@ a, a:hover{
 
 .intro_content {
     opacity: 0.8;
-    font-family: "Helvetica Neue"; Montserrat, sans-serif;
+    font-family: "Helvetica Neue";
     text-align: center;
     font-size: 2.5rem;
     font-weight: lighter;
@@ -126,7 +125,7 @@ a, a:hover{
 
 .typewrite {
     opacity: 0.7;
-    font-family: "Helvetica Neue"; Montserrat, sans-serif;
+    font-family: "Helvetica Neue";
     font-weight: lighter;
     color: #fff;
 }
@@ -136,11 +135,11 @@ a, a:hover{
 /*========== About Me Begins ==========*/
 .section_headers {
     line-height: 0em;
-    opacity: 0.8;
-    font-family: "Helvetica Neue"; Montserrat, sans-serif;
+    /*opacity: 0.8;*/
+    font-family: "Helvetica Neue";
     text-align: center;
     font-size: 2rem;
-    border: 0.5px solid grey;
+    border: 1px solid grey;
     width: 20%;
     margin: 0 auto;
     margin-top: 8rem;
@@ -154,14 +153,14 @@ a, a:hover{
 
 @media only screen and (max-width: 990px){
     .section_headers {
-    width: 50%;
+    width: 60%;
     }
 }
 
 .about_me_content {
     margin-top: 1.0rem;
     font-size: 0.8rem;
-    opacity: 0.7;
+    opacity: 0.8;
     text-align: justify;
 }
 
@@ -220,14 +219,14 @@ a, a:hover{
 }
 
 .projects_intro {
-    font-family: "Helvetica Neue"; Montserrat, sans-serif;
+    font-family: "Helvetica Neue";
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
     font-weight: bold;
 }
 
 .sql_img {
-    border: 0.5px solid grey;
+    border: 1px solid grey;
     border-radius: 15px;
     padding: 5px;
 }
@@ -271,7 +270,7 @@ a, a:hover{
 .projects_content {
     margin-top: 2.0rem;
     font-size: 0.8rem;
-    opacity: 0.7;
+    opacity: 0.8;
     text-align: justify;
 }
 
@@ -279,6 +278,7 @@ a, a:hover{
     border: 0.5px solid grey;
     border-radius: 5px;
     padding: 5px;
+    opacity: 0.8;
     text-align: center;
     width: 40%;
     margin: auto;
@@ -362,7 +362,7 @@ a, a:hover{
 }
 
 .date {
-    font-family: "Helvetica Neue"; Montserrat, sans-serif;
+    font-family: "Helvetica Neue";
     text-align: left;
     font-size: 0.8rem;
     opacity: 0.8;
@@ -373,7 +373,7 @@ a, a:hover{
     display: table;
     position: relative;
     padding: 1rem;
-    border: 0.5px solid grey;
+    border: 1px solid grey;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
     border-radius: 15px;
     -webkit-transition: all 0.6s cubic-bezier(0.165, 0.84, 0.44, 1);
@@ -420,13 +420,13 @@ a, a:hover{
 .main-timeline .title{
     font-size: 1rem;
     font-weight: lighter;
-    font-family: "Helvetica Neue"; Montserrat, sans-serif;
+    font-family: "Helvetica Neue";
     text-align: left;
     margin-top: 0;
 }
 .main-timeline .description{
     font-size: 0.8rem;
-    opacity: 0.7;
+    opacity: 0.8;
     text-align: justify;
 }
 
@@ -553,8 +553,8 @@ a, a:hover{
 /*========== Contact Me Begins ==========*/
 .contact_details {
     line-height: 1.5;
-    opacity: 0.7;
-    font-family: "Helvetica Neue"; Montserrat, sans-serif;
+    opacity: 0.8;
+    font-family: "Helvetica Neue";
     text-align: center;
     margin-bottom: 1.0rem;
     margin-top: 1.0rem;
@@ -565,11 +565,11 @@ a, a:hover{
 /*========== Footer Begins ==========*/
 #footer_copy {
     font-size: 0.8rem;
-    font-family: "Helvetica Neue"; Montserrat, sans-serif;
+    font-family: "Helvetica Neue";
     position: relative;
     left: -1rem;
     font-weight: lighter;
-    opacity: 0.7;
+    opacity: 0.8;
 }
 
 .linkedin {
