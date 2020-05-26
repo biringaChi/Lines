@@ -431,16 +431,15 @@ a, a:hover{
 }
 
 .main-timeline .timeline:nth-child(2){
-    margin-top: 135px;
+    margin-top: 120px;
+    margin-left: -25px;
 }
 
-/* 1st */
 .main-timeline .timeline:nth-child(odd){
     margin: -125px -50px 0px 50px;
     /*margin-right: -50px;*/
 }
 
-/* 2nd */
 .main-timeline .timeline:nth-child(even){
     margin-bottom: 100px;
 }
