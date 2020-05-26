@@ -1,0 +1,12 @@
+# Ignore
+* 
+
+# Except
+!.gitignore
+!index.html
+!css
+!js
+!resume
+!images
+!README.md
+!LICENSE.txt
