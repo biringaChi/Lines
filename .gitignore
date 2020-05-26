@@ -3,6 +3,7 @@
 
 # Except
 !.gitignore
+!CNAME
 !index.html
 !css
 !js
