@@ -348,7 +348,7 @@ a, a:hover{
 }
 
 .date {
-    font-family: "Helvetica Neue";
+    font-family: Consolas, "Market Pro", Arial, Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", sans-serif;
     text-align: left;
     font-size: 0.8rem;
     opacity: 0.8;
