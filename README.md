@@ -1,5 +1,5 @@
 <h1 align="center">
-  Lines | biringachidera.com | v1
+  Lines v1
 </h1>
 <div align="center">
   <img alt="Introduction Section" src="./images/read_me/sample.png" width="100%" height="100%" />
