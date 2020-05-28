@@ -7,7 +7,7 @@
 
 
 ## License
-Lines is licensed under **MIT License**.
+Lines is licensed under the **MIT License**.
 
 ## Author
 Chidera Biringa [biringachidera@gmail.com]
