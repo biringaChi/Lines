@@ -26,20 +26,41 @@ a, a:hover{
     outline: none;
 }
 
-
 /*========== Body Ends ==========*/
 
 
 /*========== Navigation Begins ==========*/
-
 .navbar {
     background-color: #0d1319;
     line-height: 4;
 }
 
-.navbar-nav a:hover {
-    color: grey;
-    border-bottom: 0.1px solid grey;
+.navbar-nav > li > a {
+  position: relative;
+  text-decoration: none;
+}
+
+.navbar-nav > li > a:hover {
+  color: grey;
+  border-bottom: 0.5px solid grey;
+}
+
+.navbar-nav > li > a::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 1px;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+  visibility: hidden;
+  transform: scaleX(0);
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.navbar-nav > li > a:hover::before {
+  visibility: visible;
+  transform: scaleX(1);
 }
 
 .navbar-nav {
@@ -78,7 +99,6 @@ a, a:hover{
 .logo {
     border: 1px solid grey;
     border-radius: 15px;
-    margin-left: 1rem;
 }
 
 .logo:hover {
@@ -90,7 +110,6 @@ a, a:hover{
     font-family: Consolas, "Market Pro", Arial, Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", sans-serif;
     border-radius: 15px;
     margin-left: 2rem;
-    /*margin-right: 1rem;*/
     box-shadow: 0 1px 2px rgba(0,0,0,0.15);
     width: 80px;
 }
@@ -105,6 +124,10 @@ a, a:hover{
     .resume_header {
         padding: 10px;
     }
+}
+
+.active {
+  border-bottom: 1px solid #fff;
 }
 
 /*========== Navigation Ends ==========*/
@@ -141,7 +164,7 @@ a, a:hover{
 
 @media only screen and (max-width: 990px){
     .section_headers {
-    width: 60%;
+    width: 100%;
     }
 }
 
@@ -166,15 +189,14 @@ a, a:hover{
 
 @media only screen and (max-width: 580px) {
     .profile_picture {
-        opacity: 1;
-        width: 200px;
-        height: 200px;
+        opacity: 0;
+        width: 0;
+        height: 0;
     }
     .image_placement {
         margin-left: 5rem;
     }
 }
-
 
 .hovereffect_ab img {
     display:block;
@@ -195,12 +217,10 @@ a, a:hover{
     width: 50%;
     filter:alpha(opacity=100);
 }
-
 /*========== About Me Ends ==========*/
 
 
 /*========== Projects Begins ==========*/
-
 .image_placement {
     margin-top: 1rem;
     padding: 5px;
@@ -286,8 +306,6 @@ a, a:hover{
     width: 100%;
     margin: auto;
 }
-
-
 /*========== Projects Ends ==========*/
 
 /*========== Experience Begins ==========*/
@@ -530,7 +548,6 @@ a, a:hover{
         text-align: center;
     }
 }
-
 /*========== Experience Ends ==========*/
 
 /*========== Contact Me Begins ==========*/
@@ -542,7 +559,6 @@ a, a:hover{
 #footer_copy {
     font-size: 0.8rem;
     position: relative;
-    left: -1rem;
     font-weight: lighter;
     opacity: 0.8;
 }
@@ -569,3 +585,5 @@ a, a:hover{
     color: grey;
 }
 /*========== Footer Ends ==========*/
+/*========== Contact Me Ends ==========*/
+

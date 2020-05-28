@@ -1,36 +1,25 @@
-// (function() {
-//     scrollTo();
-// })();
+let link_nav = document.getElementById("navbarMenu");
 
-// function scrollTo() {
-//     var links = document.getElementsByTagName('a');
-//     for (var i = 0; i < links.length; i++) {
-//         var link = links[i];
-//         if ((link.href && link.href.indexOf('#') != -1) && ((link.pathname == location.pathname) || ('/' + link.pathname == location.pathname)) && (link.search == location.search)) {
-//             link.onclick = scrollAnchors;
-//         }
-//     }
-// }
+if (link_nav) {
+  let nav_items = link_nav.getElementsByTagName('li');
+  let i;
+  for (i = 0; i < nav_items.length; i++) {
+    nav_items[i].addEventListener("click", function() {
+      if (!this.classList.contains('active')) {
+        clearActive(nav_items);
+        this.classList.toggle('active');
+      }
+    });
+  }
+}
 
-// function scrollAnchors(e, respond = null) {
-//     const distanceToTop = el => Math.floor(el.getBoundingClientRect().top);
-//     e.preventDefault();
-//     var targetID = (respond) ? respond.getAttribute('href') : this.getAttribute('href');
-//     const targetAnchor = document.querySelector(targetID);
-//     if (!targetAnchor) return;
-//     const originalTop = distanceToTop(targetAnchor);
-//     window.scrollBy({ top: originalTop, left: 0, behavior: 'smooth' });
-//     const checkIfDone = setInterval(function() {
-//         const atBottom = window.innerHeight + window.pageYOffset >= document.body.offsetHeight - 2;
-//         if (distanceToTop(targetAnchor) === 0 || atBottom) {
-//             targetAnchor.tabIndex = '-1';
-//             targetAnchor.focus();
-//             window.history.pushState('', '', targetID);
-//             clearInterval(checkIfDone);
-//         }
-//     }, 100);
-// }
-
+function clearActive(classlist) {
+  if (classlist) {
+    for (i = 0; i < classlist.length; i++) {
+      classlist[i].classList.remove('active');
+    }
+  }
+}
 
 let TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
