@@ -1,7 +1,3 @@
-/*author: biringaChi
-  email: biringachidera@gmail.com
-*/
-
 /*========== Body Begins ==========*/
 html {
     scroll-behavior: smooth;
@@ -20,6 +16,20 @@ body {
   height: 100%;
   font-size: 1rem;
   font-weight: lighter;
+}
+
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  opacity: 0.5;
+  width: 100%;
+  background: #0d1319;
+  position: fixed;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s linear;
 }
 
 @media only screen and (max-width: 990px){

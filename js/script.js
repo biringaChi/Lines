@@ -1,3 +1,17 @@
+let preloader = document.querySelector('.preloader');
+let fadeEffect;
+window.addEventListener('load', () => setInterval(function() {
+    if (!preloader.style.opacity) {
+    preloader.style.opacity = 1;
+  }
+  if (preloader.style.opacity > 0) {
+    preloader.style.opacity -= 0.1;
+  } else {
+    clearInterval(fadeEffect);
+  }
+},
+100));
+
 let link_nav = document.getElementById("navbarMenu");
 
 if (link_nav) {
