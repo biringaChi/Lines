@@ -59,10 +59,10 @@ a, a:hover{
 .navbar-nav > li > a {
   position: relative;
   text-decoration: none;
+  font-size: 0.8rem;
 }
 
 .navbar-nav > li > a:hover {
-  box-shadow: 1px 1px 1px 1px #000;
   border-radius: 15px;
 }
 
@@ -95,21 +95,20 @@ a, a:hover{
 .navbar-nav > li {
     display: inline-block;
     float:none;
-    font-size: 1rem;
     font-weight: lighter;
     font-family: Consolas, Arial, "Market Pro", Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", sans-serif;
-    margin-left: 3rem;
+    margin-left: 2rem;
     opacity: 0.8;
 }
 
 @media only screen and (max-width: 590px){
-    .navbar-nav > li {
+    .navbar-nav > li > a {
         display: block;
     }
 
     .navbar-nav a:hover {
-        color: grey;
         border-bottom: none;
+    }
     }
 
     .logo {
@@ -118,26 +117,30 @@ a, a:hover{
 }
 
 .logo {
-    border: 1px solid grey;
+    opacity: 0.5;
     border-radius: 15px;
 }
 
 .logo:hover {
     border: none;
-    box-shadow: 1px 1px 1px 1px #000;
+    border-radius: 15px;
+    box-shadow: 0px 0px 1px 0px #000;
 }
 
 .resume_header {
-    border: 1px solid grey;
+    border: 1px solid #fff;
+    opacity: 0.8;
     font-family: Consolas, Arial, "Market Pro", Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", sans-serif;
     border-radius: 15px;
+    font-weight: lighter;
+    font-size: 0.9rem;
     margin-left: 2rem;
     width: 80px;
 }
 
 .resume_header:hover {
     border: none;
-    box-shadow: 1px 1px 1px 1px #000;
+    box-shadow: 0px 0px 1px 0px #000;
 }
 
 @media only screen and (max-width: 990px){
@@ -175,7 +178,7 @@ a, a:hover{
 .section_headers {
     line-height: 0em;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     width: 100%;
     margin: 0 auto;
     margin-top: 8rem;
