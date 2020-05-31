@@ -4,7 +4,7 @@ html {
 }
 
 font-face {
-    font-family: OptimusPrinceps;
+    font-family: Consolas;
     src: "./fonts/consolas/Consolas.ttf";
   }
 
@@ -103,28 +103,23 @@ a, a:hover{
 
 @media only screen and (max-width: 590px){
     .navbar-nav > li > a {
+        content: "";
         display: block;
     }
 
     .navbar-nav a:hover {
         border-bottom: none;
     }
+
+    .resume_header {
+        margin-right: 2rem;
     }
 
-    .logo {
-        margin-right: -1.5rem;
-    }
 }
 
 .logo {
-    opacity: 0.5;
     border-radius: 15px;
-}
-
-.logo:hover {
-    border: none;
-    border-radius: 15px;
-    box-shadow: 0px 0px 1px 0px #000;
+    opacity: 0.8;
 }
 
 .resume_header {
@@ -180,15 +175,16 @@ a, a:hover{
     text-align: center;
     font-size: 1.5rem;
     width: 100%;
-    margin: 0 auto;
-    margin-top: 8rem;
-    margin-bottom: 2rem;
 }
 
 @media only screen and (max-width: 990px){
     .section_headers {
     width: 100%;
     }
+}
+
+.about_me_container{
+    margin-top: 8rem;
 }
 
 .about_me_content {
@@ -198,26 +194,39 @@ a, a:hover{
     text-align: justify;
 }
 
-.profile_picture {
-    border-radius: 15px;
-    cursor: pointer;
+.image_placement {
+    position: relative;
+    margin-top: 1rem;
     padding: 5px;
-    opacity: 0.3;
+}
+
+.image_placement img {
+    width: 60%;
+    height: 60%;
+    border-radius: 15px;
+    padding: 2px;
     border: 2px solid grey;
 }
 
-.profile_picture:hover {
+.profile_picture1 {
+    position: absolute;
+    border-radius: 15px;
+    top: -170px;
+    opacity: 0;
+    transition: opacity 0.5 ease;
+}
+
+.profile_picture1:hover {
     opacity: 1;
 }
 
-@media only screen and (max-width: 580px) {
-    .profile_picture {
-        opacity: 0;
+@media only screen and (max-width: 990px) {
+    .image_placement img {
         width: 0;
-        height: 0;
-    }
-    .image_placement {
-        margin-left: 5rem;
+        height: 0%;
+        border-radius: 0;
+        padding: 0;
+        border:  0;
     }
 }
 
@@ -244,11 +253,6 @@ a, a:hover{
 
 
 /*========== Projects Begins ==========*/
-.image_placement {
-    margin-top: 1rem;
-    padding: 5px;
-}
-
 .projects_intro {
     margin-bottom: 0.5rem;
     font-size: 0.9rem;
@@ -256,12 +260,15 @@ a, a:hover{
 }
 
 .sql_img {
-    /*border: 1px solid grey;*/
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     padding: 5px;
 }
 
-.sql_img_lines {
+.lines {
+    width: 100%;
+    height: 100%;
     border-radius: 15px;
     padding: 5px;
 }
@@ -315,11 +322,6 @@ a, a:hover{
 
 .github_pill:hover {
     color: grey;
-}
-
-.img_logo {
-    border: 0.5px solid grey;
-    text-align: center;
 }
 
 .technologies {
@@ -574,8 +576,12 @@ a, a:hover{
 /*========== Experience Ends ==========*/
 
 /*========== Contact Me Begins ==========*/
+.say_hello {
+    margin-top: 8rem;
+}
+
 .contact_details {
-    padding-top: 1rem;
+    padding-top: 2rem;
 }
 
 /*========== Footer Begins ==========*/

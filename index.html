@@ -13,7 +13,8 @@
     <meta content="utf-8" http-equiv="encoding">
     <link rel="icon" type="image/png" href="./images/favicon.png"/>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Consolas:300,400,500,700&display=swap" rel="stylesheet" type="text/css">
+    <!-- <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Consolas:300,400,500,700&display=swap" rel="stylesheet" type="text/css"> -->
+
     <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="css/style.css">
@@ -85,9 +86,10 @@
                 <div class="image_placement hovereffect_ab">
                     <div class="overlay_ab">
                     </div>
-                    <img class="profile_picture img-responsive" width="60%", height="60%" src="./images/profile_picture/profile_picture.jpeg" alt="Profile Picture"/>
+                    <img class="profile_picture img-responsive" src="./images/profile_picture/profile_picture.jpeg" alt="Profile Picture"/>
+                    <div id = "projects"></div>
+                    <img class="profile_picture1 img-responsive" src="./images/profile_picture/profile_picture1.jpeg" alt="Profile Picture"/>
                 </div>
-                <div id = "projects"></div>
             </div>
         </div>
     </div>
@@ -101,7 +103,7 @@
         <div class="row mt-1 justify-content-center projects_my_row">
             <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
-                    <img class="sql_img_lines img-responsive" width="100%", height="100%" src="./images/lines/lines.png" alt="Lines"/>
+                    <img class="lines img-responsive" src="./images/lines/lines.png" alt="Lines"/>
                         <div class="projects_content">
                             <p class="projects_intro"> Lines: Personal portfolio Website V1 </p>
                             <p> A simple single page personal website to showcase some of my work </p>
@@ -118,7 +120,7 @@
             <!-- Row 1 Col 1 -->
             <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
-                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/pif_model/pif.png" alt="Predictive Inference Frame (PIF) Model"/>
+                    <img class="sql_img img-responsive" src="./images/pif_model/pif.png" alt="Predictive Inference Frame (PIF) Model"/>
                         <div class="projects_content">
                             <p class="projects_intro"> PIF Model: An AI model to predict and generate video frames</p>
                             <p> An Artificial Intelligence model that can infer a new frame between two existing sequential frames of a video.
@@ -138,7 +140,7 @@
             <!-- Row 1 Col 2 -->
             <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
-                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/sql_query_eval/sql.png" alt="SQL Query Evaluator"/>
+                    <img class="sql_img img-responsive" src="./images/sql_query_eval/sql.png" alt="SQL Query Evaluator"/>
                         <div class="projects_content">
                             <p class="projects_intro"> SQL Query Evaluator: An SQL engine to evaluate sql queries </p>
                             <p> An SQL query evaluator for a single-threaded database that can run TPC-H queries. It has operational support for
@@ -161,7 +163,7 @@
         <div class="row mt-1 justify-content-center projects_my_row">
             <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <div class="projects_image_placement hovereffect_2">
-                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/authorship_attr/authorship_attr.png" alt="Authorship Attribution Model"/>
+                    <img class="sql_img img-responsive" src="./images/authorship_attr/authorship_attr.png" alt="Authorship Attribution Model"/>
                         <div class="projects_content">
                             <p class="projects_intro"> Authorship Attribution: A machine learning classification model </p>
                             <p> A classification model to predict authors based on sentiments.
@@ -180,7 +182,7 @@
             <div class="col-md-5 py-4 col-sm-6 projects_my_col">
                 <!-- Row 1 Col 2 -->
                 <div class="projects_image_placement hovereffect_2">
-                    <img class="sql_img img-responsive" width="100%", height="100%" src="./images/chatbot/chatbot.png" alt="Customer Response Chatbot"/>
+                    <img class="sql_img img-responsive" src="./images/chatbot/chatbot.png" alt="Customer Response Chatbot"/>
                         <div class="projects_content">
                             <p class="projects_intro"> Customer Response Chatbot: An AI-powered chatbot </p>
                             <p> An AI model to predict responses to questions asked by customers to their favorite brands.
@@ -260,23 +262,13 @@
     </div>
     <!-- <Experience Ends -->
 
-    <script src="js/script.js"></script>
-    <!-- Dependencies -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
-
     <!-- Footer Begins -->
     <footer class="page-footer move font-small cyan darken-3">
       <div class="container">
         <div class="row">
           <div class="col-md-12 py-5">
             <div class="mb-4 flex-center">
-                <div class="section_headers" id="contact"> <i class="far fa-handshake"></i>  Say Hello  </div>
+                <div class="section_headers say_hello" id="contact"> <i class="far fa-handshake"></i>  Say Hello  </div>
                 <div class="contact_details">
                     <p> <i class="far fa-address-book"> </i> New Bedford MA 02740 US </p>
                     <p> <i class="fas fa-mobile-alt"></i> +1(508) 863-7923 </p>
@@ -299,6 +291,16 @@
 
     </footer>
     <!-- Footer Ends -->
+
+    <script src="js/script.js"></script>
+    <!-- Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
 </body>
 <!-- Body Ends -->
 </html>
