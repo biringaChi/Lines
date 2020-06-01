@@ -198,7 +198,7 @@ a, a:hover{
 }
 
 .image_placement img {
-    max-width: 60%;
+    width: 60%;
     height: 100%;
     border-radius: 15px;
     padding: 2px;
@@ -577,7 +577,6 @@ a, a:hover{
 /*========== Contact Me Begins ==========*/
 .say_hello {
     margin-top: 8rem;
-    margin-left: -1rem;
 }
 
 .contact_details {
