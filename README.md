@@ -1,5 +1,5 @@
 <h1 align="center">
-  Lines v1
+  lines v1
 </h1>
 <div align="center">
   <img alt="Introduction Section" src="./images/read_me/sample.png" width="100%" height="100%" />
