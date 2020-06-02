@@ -184,7 +184,7 @@ a, a:hover{
     opacity: 0.8;
     margin-top: 12rem;
     margin-bottom: 2rem;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #2f445a;
     line-height: 0.1em;
     font-weight: bold;
     width: 25%;
@@ -221,7 +221,7 @@ a, a:hover{
     border-radius: 5px;
     padding: 2px;
     opacity: 0.5;
-    border: 2px solid grey;
+    border: 2px solid #2f445a;
 }
 
 .image_placement img:hover {
@@ -332,7 +332,7 @@ a, a:hover{
     opacity: 0.8;
     margin-top: 7rem;
     margin-bottom: 4rem;
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #2f445a;
     line-height: 0.1em;
     font-weight: bold;
     width: 35%;
@@ -442,7 +442,7 @@ select:focus {
 
 .tabs [class^="tab"] [type="radio"],
 .tabs [class*="tab"] [type="radio"] {
-    border-bottom: 0.5px solid grey;
+    border-bottom: 0.5px solid #2f445a;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -530,7 +530,8 @@ select:focus {
 }
 
 .fa-caret-right {
-  color: grey;
+  color: #2f445a;
+  font-size: 1rem;
 }
 
 .umassd {
