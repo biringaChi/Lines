@@ -46,7 +46,6 @@ a, a:hover{
 *:focus {
     outline: none;
 }
-
 /*========== Body Ends ==========*/
 
 
@@ -60,10 +59,15 @@ a, a:hover{
   position: relative;
   text-decoration: none;
   font-size: 0.8rem;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
 .navbar-nav > li > a:hover {
   border-radius: 15px;
+  color: #2f445a;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
 .navbar-nav > li > a::before {
@@ -95,7 +99,6 @@ a, a:hover{
 .navbar-nav > li {
     display: inline-block;
     float:none;
-    /*font-family: Consolas, Arial, "Market Pro", Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", sans-serif;*/
     margin-left: 2rem;
     opacity: 0.8;
 }
@@ -112,6 +115,7 @@ a, a:hover{
 
     .resume_header {
         margin-right: 2rem;
+        opacity: 0.8;
     }
 
 }
@@ -124,17 +128,19 @@ a, a:hover{
 .resume_header {
     border: 1px solid #fff;
     opacity: 0.8;
-    /*font-family: Consolas, Arial, "Market Pro", Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", sans-serif;*/
-    border-radius: 15px;
+    border-radius: 5px;
     font-weight: lighter;
     font-size: 0.9rem;
     margin-left: 2rem;
-    width: 80px;
+    width: 70px;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 .resume_header:hover {
-    border: none;
-    box-shadow: 0px 0px 1px 0px #000;
+  background: #141d26;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
 @media only screen and (max-width: 990px){
@@ -158,10 +164,12 @@ a, a:hover{
 .intro_content {
     text-align: center;
     font-size: 5rem;
+    opacity: 0.9;
     font-weight: bold;
 }
 
 .typewrite {
+    opacity: 0.8;
     font-weight: bold;
     color: #fff;
 }
@@ -171,11 +179,20 @@ a, a:hover{
 /*========== About Me Begins ==========*/
 .section_headers {
     text-align: center;
-    font-size: 2rem;
+    margin: auto;
+    font-size: 1.5rem;
     opacity: 0.8;
-    margin-top: 10rem;
+    margin-top: 12rem;
+    margin-bottom: 2rem;
+    border-bottom: 1px solid grey;
+    line-height: 0.1em;
     font-weight: bold;
-    width: 100%;
+    width: 25%;
+}
+
+.section_headers span {
+    background: #0d1319;
+    padding:0 10px;
 }
 
 @media only screen and (max-width: 990px){
@@ -194,10 +211,14 @@ a, a:hover{
     text-align: justify;
 }
 
+.am_headers {
+  margin-bottom: 3rem;
+}
+
 .image_placement img {
     width: 60%;
     height: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
     padding: 2px;
     opacity: 0.5;
     border: 2px solid grey;
@@ -262,6 +283,11 @@ a, a:hover{
     padding: 5px;
 }
 
+.projects_my_col {
+  box-shadow: 0px 0px 5px 0px #000;
+  border-radius: 5px;
+}
+
 .lines {
     width: 100%;
     height: 100%;
@@ -299,6 +325,30 @@ a, a:hover{
     transform: translate3d(0,5%,0);
 }
 
+.selected_proj {
+    text-align: center;
+    margin: auto;
+    font-size: 1.5rem;
+    opacity: 0.8;
+    margin-top: 7rem;
+    margin-bottom: 4rem;
+    border-bottom: 1px solid grey;
+    line-height: 0.1em;
+    font-weight: bold;
+    width: 35%;
+}
+
+.selected_proj span {
+    background: #0d1319;
+    padding:0 10px;
+}
+
+@media only screen and (max-width: 990px) {
+    .selected_proj {
+      width: 100%;
+    }
+}
+
 .projects_content {
     margin-top: 2.0rem;
     font-size: 0.8rem;
@@ -306,18 +356,43 @@ a, a:hover{
     text-align: justify;
 }
 
+.projects_my_col_margin {
+  margin-right: 1.5rem;
+}
+
+.projects_my_row_margin {
+  margin-bottom: 1.5rem;
+}
+
+.project_github {
+  padding-left: 25rem;
+  color: #2f445a;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+}
+
+.project_github:hover {
+  color: #fff;
+  opacity: 0.8;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+}
+
 .github_pill {
-    border: 2px solid #fff;
-    border-radius: 5px;
+    border: 1px solid #fff;
+    border-radius: 25px;
     padding: 5px;
-    opacity: 0.8;
     text-align: center;
-    width: 35%;
+    width: 30%;
     margin: auto;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 .github_pill:hover {
-    color: grey;
+  background: #17202A;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
 .technologies {
@@ -348,6 +423,10 @@ select:focus {
     text-align: left;
 }
 
+.short_text {
+  display: none;
+}
+
 .tabs [class^="tab"] label,
 .tabs [class*=" tab"] label {
     color: #fff;
@@ -363,7 +442,7 @@ select:focus {
 
 .tabs [class^="tab"] [type="radio"],
 .tabs [class*="tab"] [type="radio"] {
-    border-bottom: 0.5px solid white;
+    border-bottom: 0.5px solid grey;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -380,12 +459,12 @@ select:focus {
 .tabs [class^="tab"] [type="radio"]:focus,
 .tabs [class*=" tab"] [type="radio"]:hover,
 .tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 1px solid #5ae5c4;
+  border-bottom: 1px solid #fff;
 }
 
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 1px solid #5ae5c4;
+  border-bottom: 1px solid #fff;
 }
 
 .tabs [class^="tab"] [type="radio"]:checked + div,
@@ -405,8 +484,14 @@ select:focus {
   transition: all 0.3s ease-in-out;
 }
 
+.experience_content {
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
 .tabs .tab-4 {
     width: 25%;
+    font-size: 1rem;
 }
 
 .tabs .tab-4 [type="radio"] + div {
@@ -417,21 +502,35 @@ select:focus {
 .tabs .tab-4 [type="radio"]:checked + div {
     margin-left: 0;
     width: 400%;
+    opacity: 0.8;
 }
 
 .tabs .tab-4:last-child [type="radio"]:checked + div {
     margin-left: -475px;
     width: 400%;
+    opacity: 0.8;
 }
 
 .tab_ta {
     margin-left: -155px;
     width: 100%;
+    font-size: 0.8rem;
+    opacity: 0.8;
 }
 
-.tab_ta1 {
+.tab_t {
     margin-left: -315px;
     width: 100%;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+.se {
+    opacity: 0.8;
+}
+
+.fa-caret-right {
+  color: grey;
 }
 
 .umassd {
@@ -442,7 +541,7 @@ select:focus {
 .umassd::before {
   content: "";
   position: absolute;
-  width: 97.5%;
+  width: 100%;
   height: 1px;
   bottom: 0;
   background-color: #fff;
@@ -456,17 +555,40 @@ select:focus {
   transform: scaleX(1);
 }
 
-.experience_content {
-    font-size: 0.8rem;
-    opacity: 0.8;
+@media only screen and (max-width: 990px) {
+    .short_text {
+      display: inline-block;
+    }
+    .full_text {
+      display: none;
+    }
+  .tabs .tab-4:last-child [type="radio"]:checked + div {
+    margin-left: -315px;
+    width: 400%;
+  }
+
+  .tab_ta {
+    margin-left: -100px;
+    width: 100%;
+  }
+
+  .tab_t {
+    margin-left: -200px;
+    width: 100%;
+    }
 }
+
 
 /*========== Experience Ends ==========*/
 
 /*========== Contact Me Begins ==========*/
+.say_hello {
+  margin-bottom: 3rem;
+}
 
 .contact_details {
-    padding-top: 2rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 /*========== Footer Begins ==========*/
@@ -474,35 +596,25 @@ select:focus {
     margin-top: 14rem;
 }
 
-#footer_copy {
-    font-size: 0.8rem;
-    position: relative;
-    font-weight: lighter;
-    opacity: 0.8;
+.footer_copy {
+    font-size: 0.7rem;
+    opacity: 0.5;
     margin-top: 12rem;
 }
 
-.linkedin {
-    font-size: 1rem;
-    color: grey;
+.social_icons {
+  font-size: 0.9rem;
+  color: #fff;
+  opacity: 0.8;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
 }
 
-.github {
-    font-size: 1rem;
-    background-color: #0d1319;
-    color: grey;
-}
-
-.linkedin {
-    font-size: 1rem;
-    color: grey;
-}
-
-.github {
-    font-size: 1rem;
-    background-color: #0d1319;
-    color: grey;
+.social_icons:hover {
+  color: #2f445a;
+  transition: all .4s ease;
+  -webkit-transition: all .4s ease;
+  opacity: 0.8;
 }
 /*========== Footer Ends ==========*/
 /*========== Contact Me Ends ==========*/
-

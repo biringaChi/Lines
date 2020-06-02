@@ -14,4 +14,4 @@ Chidera Biringa [biringachidera@gmail.com]
 
 
 ## Description
-Lines (<a href="https://biringachidera.com" target="_blank">biringachidera.com</a>) is a personal portfolio website to showcase some of my work. Built using HTML5, CSS3 and Vanilla Javascript, and hosted with GitHub Pages.
+lines (<a href="https://biringachidera.com" target="_blank">biringachidera.com</a>) is a personal portfolio website to showcase some of my work. Built using HTML5, CSS3 and Vanilla Javascript, and hosted with GitHub Pages.

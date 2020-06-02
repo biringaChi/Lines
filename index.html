@@ -63,19 +63,23 @@
     </div>
     </div>
     <!-- Introduction Ends -->
+
     <!-- About Me Begins -->
     <div class="container about_me_container">
-        <p class="section_headers"> About Me </p>
+        <p class="section_headers am_headers"> <span> About Me </span> </p>
         <div class="row justify-content-center about_me_my_row">
             <div class="col-md-5 col-sm-6 about_me_my_col" >
                 <div class="about_me_content">
-                    <p> Hey there, I'm Chi, a graduate student studying Computer Science at the University of Massachusetts. </p>
+                    <p> Hi, I'm Chi, a graduate student studying Computer Science at the University of Massachusetts. </p>
 
-                    <p> I have a strong technical background in descriptive and predictive analysis.
-                    Super interested in the manipulation and interpretation of data to derive pertinent insights. </p>
+                    <p>
+                    I have a strong technical background in descriptive and predictive data analysis.
+                    I am interested in the manipulation and interpretation of data to derive pertinent insights.
+                    </p>
 
                     <div id = "resume"></div>
-                    <p> I have taken advanced courses in Data Mining and Machine Learning that helped bridge my knowledge gap between
+                    <p>
+                    I have taken advanced courses in Data Mining and Machine Learning that helped bridge my knowledge gap between
                     theoretical understanding and programmatic implementation of machine learning applications.
                     </p>
                  </div>
@@ -92,19 +96,21 @@
     </div>
     <!-- About Me Ends -->
 
+    <div id="projects"></div>
+
     <!-- Projects Begins -->
-    <div id = "projects"></div>
     <div class="container projects_container">
-        <p class="section_headers"> Selected Projects </p>
+        <p class="selected_proj"> <span> Selected Projects </span> </p>
 
         <!-- Begin Row 1 -->
-        <div class="row mt-1 justify-content-center projects_my_row">
-            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
+        <div class="row justify-content-center projects_my_row projects_my_row_margin">
+            <div class="col-md-5 py-4 col-sm-6 projects_my_col projects_my_col_margin">
+                <a class="project_github" href="https://github.com/biringaChi/Lines" target="_blank"><i class="fab fa-github"> </i></a>
                 <div class="projects_image_placement hovereffect_2">
                     <img class="lines img-responsive" src="./images/lines/lines.png" alt="Lines"/>
                         <div class="projects_content">
                             <p class="projects_intro"> Lines: Personal portfolio Website V1 </p>
-                            <p> A simple single page personal website to showcase some of my work </p>
+                            <p> A personal website to showcase some of my work. </p>
                             <div class="technologies"> <i class="fab fa-html5"></i> | <i class="fab fa-css3"></i> | <i class="fab fa-js-square"></i>
                             </div>
                             <p class="github_pill"> <a href="https://github.com/biringaChi/Lines" target="_blank">View on Github</a></p>
@@ -114,18 +120,20 @@
         </div>
 
         <!-- Begin Row 2 -->
-        <div class="row mt-1 justify-content-center projects_my_row">
+        <div class="row justify-content-center projects_my_row projects_my_row_margin">
             <!-- Row 1 Col 1 -->
-            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
+            <div class="col-md-5 py-4 col-sm-6 projects_my_col projects_my_col_margin">
+                <a class="project_github" href="https://github.com/biringaChi/PIF-Model" target="_blank"><i class="fab fa-github"> </i></a>
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" src="./images/pif_model/pif.png" alt="Predictive Inference Frame (PIF) Model"/>
                         <div class="projects_content">
                             <p class="projects_intro"> PIF Model: An AI model to predict and generate video frames</p>
-                            <p> An Artificial Intelligence model that can infer a new frame between two existing sequential frames of a video.
-                                We trained a GAN neural network framework using youtube footage to predict its existing frames.
-                                The model was able to infer new frames from high definition videos. Furthermore, the model was able to generate new videos
+                            <p>
+                                An Artificial Intelligence model that can infer a new frame between two existing sequential frames of a video.
+                                The generative neural network model used youtube footage to predict existing frames and generate videos.
+<!--                                 The model was able to infer new frames from high definition videos. Furthermore, the model was able to generate new videos
                                 from the input data sample. The model works by splitting a video into contiguous frames categorized as scenes,
-                                these scenes are processed and passed into the generator network which generates new video frames.
+                                these scenes are processed and passed into the generator network which generates new video frames. -->
                             </p>
                             <div class="technologies">
                                 <i class="fab fa-python"></i> | PyTorch | NumPy
@@ -136,17 +144,19 @@
             </div>
 
             <!-- Row 1 Col 2 -->
-            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
+            <div class="col-md-5 py-4 col-sm-6 projects_my_col projects_my_col_margin">
+                <a class="project_github" href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank"><i class="fab fa-github"> </i></a>
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" src="./images/sql_query_eval/sql.png" alt="SQL Query Evaluator"/>
                         <div class="projects_content">
                             <p class="projects_intro"> SQL Query Evaluator: An SQL engine to evaluate sql queries </p>
-                            <p> An SQL query evaluator for a single-threaded database that can run TPC-H queries. It has operational support for
+                            <p>
+                                An SQL query evaluator for a single-threaded database that can run TPC-H queries. It has operational support for
                                 Select, Project, Join, Union, Aggregate operations, and implements standard optimization techniques such as
-                                projection pushdown, selection pushdown, and cross-product to join conversion. Our program will receive an
+                                projection pushdown, selection pushdown, and cross-product to join conversion. <!-- Our program will receive an
                                 SQL File with a collection of CREATE TABLE and SELECT statements. These statements define a representational
                                 schema for the data and perform filtering and other operations on the data. The result of these operations will
-                                be in a standardized row-oriented data form.
+                                be in a standardized row-oriented data form. -->
                             </p>
 
                             <div class="technologies"> <i class="fab fa-java"></i> | SQL
@@ -157,16 +167,17 @@
             </div>
         </div>
 
-    <!-- Begin Row 3 -->
-        <div class="row mt-1 justify-content-center projects_my_row">
-            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
+       <!-- Begin Row 3 -->
+        <div class="row justify-content-center projects_my_row projects_my_row_margin">
+            <div class="col-md-5 py-4 col-sm-6 projects_my_col projects_my_col_margin">
+                <a class="project_github" href="https://github.com/biringaChi/Authorship-Attribution" target="_blank"><i class="fab fa-github"> </i></a>
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" src="./images/authorship_attr/authorship_attr.png" alt="Authorship Attribution Model"/>
                         <div class="projects_content">
                             <p class="projects_intro"> Authorship Attribution: A machine learning classification model </p>
-                            <p> A classification model to predict authors based on sentiments.
-                                Experiments on books that are extracted from Victorian Era Authors datasets by using different
-                                features such as bag-of-words, n-grams, and TF-IDF models.
+                            <p>
+                                A classification model to predict authors based on sentiments.
+                                Experiments were executed on books extracted from Victorian Era Authors.
                             </p>
 
                             <div class="technologies">
@@ -177,15 +188,16 @@
                 </div>
             </div>
 
-            <div class="col-md-5 py-4 col-sm-6 projects_my_col">
+            <div class="col-md-5 py-4 col-sm-6 projects_my_col projects_my_col_margin">
+                <a class="project_github" href="https://github.com/biringaChi/Chatbot" target="_blank"><i class="fab fa-github"> </i></a>
                 <!-- Row 1 Col 2 -->
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" src="./images/chatbot/chatbot.png" alt="Customer Response Chatbot"/>
                         <div class="projects_content">
                             <p class="projects_intro"> Customer Response Chatbot: An AI-powered chatbot </p>
-                            <p> An AI model to predict responses to questions asked by customers to their favorite brands.
-                                Using twitter dataset comprising of top companies. The model was able to predict an
-                                average of 3 intelligible responses from 5 sequential questions.
+                            <p>
+                                An AI model to predict responses to questions asked by customers to their favorite brands.
+                                The model was able to predict an average of 3 intelligible responses from 5 sequential questions.
                             </p>
                             <div class="technologies">
                                 <i class="fab fa-r-project"></i> | quanteda | caret
@@ -198,32 +210,34 @@
         </div>
     </div>
     </div>
-
     <!-- Projects Ends -->
 
     <!-- Experience Begins -->
     <div class="container experience_container">
-        <p class="section_headers"> Experience </p>
+        <p class="section_headers"><span> Experience </p></span>
 
         <div class="row justify-content-center experience_my_row">
             <!-- Row 1 Col 1 -->
             <div class="col-md-7 col-sm-6">
             <div class="tabs">
 
-              <div class="tab-4 ">
+              <div class="tab-4">
                 <label for="tab2-1"> Grader </label>
                 <input id="tab2-1" name="tabs-four" type="radio" checked="checked">
                 <div class="experience_content">
-                  <p> Grader @ <a class="umassd" href="https://www.umassd.edu/" target="_blank">
-                  University of Massachusetts-Darthmouth </a> <br> September - December, 2019 </p>
-                  <p> <i class="fas fa-caret-right"></i>
+                  <p class="se">
+                    Grader @ <a class="umassd" href="https://www.umassd.edu/" target="_blank">
+                   University of Massachusetts-Darthmouth </a> <br> September - December, 2019
+                 </p>
+                  <p class="se"> <i class="fas fa-caret-right"></i>
                   Graded undergraduate students' assignments, projects and exams for a course on Software Process and Project Management </p>
 
                 </div>
               </div>
 
               <div class="tab-4">
-                <label for="tab2-2"> Teaching Assistant </label>
+                <span class="full_text"> <label for="tab2-2"> Teaching Assistant </label> </span>
+                <span class="short_text"> <label for="tab2-2"> &nbsp; &nbsp; &nbsp;   TA </label> </span>
                 <input id="tab2-2" name="tabs-four" type="radio">
                 <div class="experience_content">
                   <p class="tab_ta">
@@ -237,11 +251,11 @@
                 <label for="tab2-3"> Teacher </label>
                 <input id="tab2-3" name="tabs-four" type="radio">
                 <div class="experience_content">
-                  <p class="tab_ta1">
+                  <p class="tab_t">
                     CS | Math Teacher @ <a class="umassd" href="https://www.lagosschoolsonline.com/" target="_blank">
                     Amuwo-Odofin Secondary School </a> <br> May 2017 - April, 2018
                  </p>
-                  <p class="tab_ta1">
+                  <p class="tab_t">
                     <i class="fas fa-caret-right"></i> Taught Information Technology to 9th grade student <br>
                     <i class="fas fa-caret-right"></i> Taught Mathematics to 12th grade student
                  </p>
@@ -250,11 +264,13 @@
 
 
               <div class="tab-4">
-                <label for="tab2-4"> Software Engineer </label>
+                <span class="full_text se"> <label for="tab2-4"> Software Engineer </label> </span>
+                <span class="short_text se"> <label for="tab2-4"> &nbsp; &nbsp; &nbsp;  SE </label> </span>
+
                 <input id="tab2-4" name="tabs-four" type="radio">
                 <div class="experience_content">
-                  <p> Software Engineer @ <a class="umassd" href="https://www.nnpcgroup.com/" target="_blank"> NNPC-PPMC </a> <br> May - August, 2015 </p>
-                  <p>
+                  <p class="se"> Software Engineer @ <a class="umassd" href="https://www.nnpcgroup.com/" target="_blank"> NNPC-PPMC </a> <br> May - August, 2015 </p>
+                  <p class="se">
                     <i class="fas fa-caret-right"></i> Developed webpages for the engineering section of the company <br>
                     <i class="fas fa-caret-right"></i> Designed strategies to improve the performance of in-house crudeoil processing software
                    </p>
@@ -267,31 +283,30 @@
     </div>
     <!-- <Experience Ends -->
 
-
     <!-- Footer Begins -->
     <footer class="page-footer move font-small cyan darken-3">
       <div class="container">
         <div class="row">
           <div class="col-md-12 py-5">
             <div class="footer_container mb-4 flex-center">
-                <div class="section_headers say_hello" id="contact"> Say Hello </div>
+                <div class="section_headers say_hello" id="contact"> <span> Say Hello </span> </div>
                 <div class="contact_details">
-                    <p> <i class="far fa-address-book"> </i> New Bedford MA 02740 US </p>
+                    <p>
+                        <a class="social_icons" href="https://www.linkedin.com/in/chidera-biringa" target="_blank"> <i class="fab fa-linkedin-in mr-3"> </i></a>
+                        <a class="social_icons" href="https://github.com/biringaChi" target="_blank"><i class="fab fa-github"> </i></a>
+                    </p>
                     <p> <i class="fas fa-mobile-alt"></i> +1(508) 863-7923 </p>
                     <p> <i class="far fa-envelope"></i> biringachidera@gmail.com </p>
+                    <p> <i class="far fa-address-book"> </i> New Bedford Massachusetts 02740 US </p>
                 </div>
-                <a class="linkedin" href="https://www.linkedin.com/in/chidera-biringa" target="_blank"> <i class="fab fa-linkedin-in mr-3"> </i></a>
-                <a class="github" href="https://github.com/biringaChi" target="_blank"><i class="fab fa-github mr-3"> </i></a>
             </div>
           </div>
         </div>
       </div>
 
       <!-- Copyright Begins-->
-      <div class="footer-copyright text-center py-3">
-        <p id="footer_copy"> <i class="fas fa-copyright">
-        </i> Built by Biringa Chidera 2020
-        </p>
+      <div class="footer-copyright">
+        <p class="footer_copy"> <i class="fas fa-copyright"> </i> Built by Biringa Chidera 2020 </p>
       </div>
       <!-- Copyright Ends -->
 
@@ -307,6 +322,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.18.0/js/mdb.min.js"></script>
+
 </body>
 <!-- Body Ends -->
+
 </html>
