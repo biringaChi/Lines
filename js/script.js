@@ -1,3 +1,4 @@
+// Preloader
 let preloader = document.querySelector('.preloader');
 let fadeEffect;
 window.addEventListener('load', () => setInterval(function() {
@@ -12,8 +13,8 @@ window.addEventListener('load', () => setInterval(function() {
 },
 100));
 
+// Navigation bar
 let link_nav = document.getElementById("navbarMenu");
-
 if (link_nav) {
   let nav_items = link_nav.getElementsByTagName('li');
   let i;
@@ -26,7 +27,6 @@ if (link_nav) {
     });
   }
 }
-
 function clearActive(classlist) {
   if (classlist) {
     for (i = 0; i < classlist.length; i++) {
@@ -35,6 +35,7 @@ function clearActive(classlist) {
   }
 }
 
+// Tyewrite
 let TxtType = function(el, toRotate, period) {
         this.toRotate = toRotate;
         this.el = el;

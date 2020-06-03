@@ -65,7 +65,7 @@ a, a:hover{
 
 .navbar-nav > li > a:hover {
   border-radius: 15px;
-  color: #2f445a;
+  color: #fff;
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
 }
@@ -377,7 +377,6 @@ a, a:hover{
 }
 
 .project_github:hover {
-  color: #fff;
   opacity: 0.8;
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
