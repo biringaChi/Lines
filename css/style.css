@@ -16,6 +16,7 @@ body {
   height: 100%;
   font-size: 1rem;
   font-weight: lighter;
+  -webkit-transition: all .4s ease;
 }
 
 .preloader {
@@ -30,12 +31,6 @@ body {
   top: 0;
   left: 0;
   transition: opacity 0.5s linear;
-}
-
-@media only screen and (max-width: 990px){
-    body{
-        /*font-family: Consolas;*/
-    }
 }
 
 a, a:hover{
@@ -65,7 +60,6 @@ a, a:hover{
 
 .navbar-nav > li > a:hover {
   border-radius: 15px;
-  color: #fff;
   transition: all .4s ease;
   -webkit-transition: all .4s ease;
 }
@@ -82,11 +76,6 @@ a, a:hover{
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
 }
-
-/*
-.active {
-  color: #2f445a;
-}*/
 
 .navbar-nav > li > a:hover::before {
   visibility: visible;
@@ -157,21 +146,126 @@ a, a:hover{
 .active {
   border-bottom: 1px solid #fff;
 }
-
 /*========== Navigation Ends ==========*/
 
+/*========== Color Theme Variation Begins ==========*/
+.theme_variation {
+  margin-top: 8rem;
+  margin-right: 1.5rem;
+}
+
+.label {
+  width: 55px;
+  height: 30px;
+  background-color: #0d1319;
+  border: 3px solid #16202a;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  position: relative;
+  display: flex;
+  border-radius: 50px;
+}
+
+.fa-moon {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
+.fa-sun {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 0.8rem;
+}
+
+.ball {
+  height: 18px;
+  width: 18px;
+  left: 0.3rem;
+  border-radius: 50%;
+  background-color: #16202a;
+  position: absolute;
+  -webkit-transition: all .4s ease;
+}
+
+.checkbox {
+  opacity: 0;
+  position: absolute;
+}
+
+.checkbox:checked + .label .ball {
+  transform: translateX(21px);
+  -webkit-transition: all .4s ease;
+}
+
+body.dark .label {
+  background-color: #16202a;
+  border: 2px solid #2f445a;
+}
+
+
+body.dark .ball {
+  background-color: #0d1319;
+}
+
+body.dark .navbar {
+  background-color: #16202a;
+  -webkit-transition: all .4s ease;
+}
+
+body.dark {
+  background-color: #16202a;
+  -webkit-transition: all .4s ease;
+}
+
+body.dark .intro_content {
+  color: #fff;
+  -webkit-transition: all .4s ease;
+}
+
+body.dark .about_me_content {
+  color: #fff;
+  -webkit-transition: all .4s ease;
+}
+
+body.dark .projects_content {
+  color: #fff;
+  -webkit-transition: all .4s ease;
+}
+
+body.dark .experience_content {
+  color: #fff;
+  -webkit-transition: all .4s ease;
+}
+
+body.dark .section_headers span{
+  background: #16202a;
+}
+
+body.dark .selected_proj span{
+  background: #16202a;
+}
+
+body.dark .resume_header:hover {
+  background: #2f445a;
+}
+
+body.dark .github_pill:hover {
+  background: #2f445a;
+}
+/*========== Color Theme Variation Ends ==========*/
 
 /*========== Introduction Begins ==========*/
 .intro_container {
-    margin-top: 16rem;
+    margin-top: 8rem;
 }
 
 .intro_content {
     text-align: center;
     font-size: 5rem;
     opacity: 0.9;
-    font-weight: bold;
-}
+    font-weight: bold;}
 
 .typewrite {
     opacity: 0.8;
@@ -202,7 +296,7 @@ a, a:hover{
 
 @media only screen and (max-width: 990px){
     .section_headers {
-    width: 100%;
+      width: 50%;
     }
 }
 
@@ -335,8 +429,8 @@ a, a:hover{
     margin: auto;
     font-size: 1.5rem;
     opacity: 0.8;
-    margin-top: 7rem;
-    margin-bottom: 4rem;
+    margin-top: 10.5rem;
+    margin-bottom: 5rem;
     border-bottom: 1px solid #2f445a;
     line-height: 0.1em;
     font-weight: bold;
@@ -350,7 +444,7 @@ a, a:hover{
 
 @media only screen and (max-width: 990px) {
     .selected_proj {
-      width: 100%;
+      width: 80%;
     }
 }
 

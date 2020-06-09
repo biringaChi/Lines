@@ -1,3 +1,11 @@
+// Color theme
+const checkbox = document.getElementById("checkbox");
+
+checkbox.addEventListener("change", () => {
+  // Change the theme
+  document.body.classList.toggle("dark");
+});
+
 // Preloader
 let preloader = document.querySelector('.preloader');
 let fadeEffect;
