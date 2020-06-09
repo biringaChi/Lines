@@ -159,7 +159,7 @@ a, a:hover{
   width: 55px;
   height: 30px;
   background-color: #0d1319;
-  border: 3px solid #16202a;
+  border: 1px solid #fff;
   align-items: center;
   justify-content: space-between;
   padding: 10px;
@@ -183,9 +183,9 @@ a, a:hover{
 .ball {
   height: 18px;
   width: 18px;
-  left: 0.3rem;
+  left: 0.5rem;
   border-radius: 50%;
-  background-color: #16202a;
+  background-color: #2f445a;
   position: absolute;
   -webkit-transition: all .4s ease;
 }
@@ -196,7 +196,7 @@ a, a:hover{
 }
 
 .checkbox:checked + .label .ball {
-  transform: translateX(21px);
+  transform: translateX(20px);
   -webkit-transition: all .4s ease;
 }
 
