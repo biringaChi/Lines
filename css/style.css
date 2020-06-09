@@ -158,6 +158,7 @@ a, a:hover{
 .label {
   width: 55px;
   height: 30px;
+  cursor: pointer;
   background-color: #0d1319;
   border: 1px solid #fff;
   align-items: center;
