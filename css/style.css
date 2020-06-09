@@ -48,7 +48,7 @@ a, a:hover{
 .navbar {
     background-color: #0d1319;
     line-height: 4;
-     -webkit-transition: all .4s ease;
+    -webkit-transition: all .4s ease;
 }
 
 .navbar-nav > li > a {
@@ -72,7 +72,7 @@ a, a:hover{
   height: 1px;
   bottom: 0;
   left: 0;
-  background-color: #2f445a;
+  background-color: #fff;
   visibility: hidden;
   transform: scaleX(0);
   transition: all 0.3s ease-in-out 0s;
@@ -202,7 +202,6 @@ a, a:hover{
 
 body.dark .label {
   background-color: #16202a;
-  border: 2px solid #2f445a;
 }
 
 
