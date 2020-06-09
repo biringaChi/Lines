@@ -48,6 +48,7 @@ a, a:hover{
 .navbar {
     background-color: #0d1319;
     line-height: 4;
+     -webkit-transition: all .4s ease;
 }
 
 .navbar-nav > li > a {
@@ -148,7 +149,7 @@ a, a:hover{
 }
 /*========== Navigation Ends ==========*/
 
-/*========== Color Theme Variation Begins ==========*/
+/*========== Colour Theme Variation Begins ==========*/
 .theme_variation {
   margin-top: 8rem;
   margin-right: 1.5rem;
@@ -254,7 +255,7 @@ body.dark .resume_header:hover {
 body.dark .github_pill:hover {
   background: #2f445a;
 }
-/*========== Color Theme Variation Ends ==========*/
+/*========== Colour Theme Variation Ends ==========*/
 
 /*========== Introduction Begins ==========*/
 .intro_container {
