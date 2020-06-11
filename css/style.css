@@ -121,7 +121,7 @@ a, a:hover{
 }
 
 .resume_header {
-    border: 2px solid #2f445a;
+    border: 1px solid #fff;
     opacity: 0.8;
     border-radius: 5px;
     font-weight: lighter;
@@ -655,7 +655,7 @@ select:focus {
   transform: scaleX(1);
 }
 
-@media only screen and (max-width: 990px) {
+@media only screen and (max-width: 990px) and (min-width: 100px) {
     .short_text {
       display: inline-block;
     }
