@@ -48,6 +48,7 @@ a, a:hover{
 .navbar {
     background-color: #0d1319;
     line-height: 4;
+    box-shadow: 0px 0px 1px 0px #000;
     -webkit-transition: all .4s ease;
 }
 
@@ -259,13 +260,13 @@ body.dark .github_pill:hover {
 
 /*========== Introduction Begins ==========*/
 .intro_container {
-    margin-top: 8rem;
+    margin-top: 7rem;
 }
 
 .intro_content {
     text-align: center;
     font-size: 5rem;
-    opacity: 0.9;
+    color: #2f445a;
     font-weight: bold;}
 
 .typewrite {
@@ -280,11 +281,12 @@ body.dark .github_pill:hover {
 .section_headers {
     text-align: center;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 2rem;
     opacity: 0.8;
     margin-top: 12rem;
     margin-bottom: 2rem;
-    border-bottom: 1px solid #2f445a;
+    /*border-bottom: 1px solid #2f445a;*/
+    color: #2f445a;
     line-height: 0.1em;
     font-weight: bold;
     width: 25%;
@@ -303,6 +305,8 @@ body.dark .github_pill:hover {
 
 .about_me_container{
     margin-top: 12rem;
+/*    box-shadow: 0px 0px 2px 0px #000;
+    padding-bottom: 3rem;*/
 }
 
 .about_me_content {
@@ -364,6 +368,8 @@ body.dark .github_pill:hover {
 /*========== Projects Begins ==========*/
 .projects_container {
     margin-top: 1rem;
+    box-shadow: 0px 0px 2px 0px #000;
+    padding-bottom: 4rem;
 }
 
 .projects_intro {
@@ -428,11 +434,12 @@ body.dark .github_pill:hover {
 .selected_proj {
     text-align: center;
     margin: auto;
-    font-size: 1.5rem;
+    font-size: 2rem;
     opacity: 0.8;
     margin-top: 10.5rem;
     margin-bottom: 5rem;
-    border-bottom: 1px solid #2f445a;
+    color: #2f445a;
+    /*border-bottom: 1px solid #2f445a;*/
     line-height: 0.1em;
     font-weight: bold;
     width: 35%;
@@ -457,11 +464,13 @@ body.dark .github_pill:hover {
 }
 
 .projects_my_col_margin {
-  margin-right: 1.5rem;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+  padding: 1rem;
 }
 
 .projects_my_row_margin {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .project_github {
@@ -581,6 +590,11 @@ select:focus {
   -moz-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
+}
+
+.experience_container {
+    box-shadow: 0px 0px 2px 0px #000;
+    padding-bottom: 3rem;
 }
 
 .experience_content {
