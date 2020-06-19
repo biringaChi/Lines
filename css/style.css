@@ -48,7 +48,7 @@ a, a:hover{
 .navbar {
     background-color: #0d1319;
     line-height: 4;
-    box-shadow: 0px 0px 1px 0px #000;
+    box-shadow: 0px 0px 1px 0px #2f445a;
     -webkit-transition: all .4s ease;
 }
 
@@ -151,8 +151,15 @@ a, a:hover{
 /*========== Navigation Ends ==========*/
 
 /*========== Colour Theme Variation Begins ==========*/
+.quote {
+  text-align: left;
+  opacity: 0.8;
+  margin-right: 46rem;
+  font-size: 0.8rem;
+}
+
 .theme_variation {
-  margin-top: 8rem;
+  margin-top: 9rem;
   margin-right: 1.5rem;
 }
 
@@ -206,7 +213,6 @@ body.dark .label {
   background-color: #16202a;
 }
 
-
 body.dark .ball {
   background-color: #0d1319;
 }
@@ -249,6 +255,10 @@ body.dark .selected_proj span{
   background: #16202a;
 }
 
+body.dark .say_hello span{
+  background: #16202a;
+}
+
 body.dark .resume_header:hover {
   background: #2f445a;
 }
@@ -279,17 +289,14 @@ body.dark .github_pill:hover {
 
 /*========== About Me Begins ==========*/
 .section_headers {
-    text-align: center;
-    margin: auto;
+    margin-left: 14.8rem;
     font-size: 2rem;
-    opacity: 0.8;
     margin-top: 12rem;
-    margin-bottom: 2rem;
-    /*border-bottom: 1px solid #2f445a;*/
+    border-bottom: 1.5px solid #2f445a;
     color: #2f445a;
-    line-height: 0.1em;
+    line-height: 0.0em;
     font-weight: bold;
-    width: 25%;
+    width: 27%;
 }
 
 .section_headers span {
@@ -299,14 +306,13 @@ body.dark .github_pill:hover {
 
 @media only screen and (max-width: 990px){
     .section_headers {
-      width: 50%;
+      width: 55%;
+      margin-left: 0;
     }
 }
 
 .about_me_container{
     margin-top: 12rem;
-/*    box-shadow: 0px 0px 2px 0px #000;
-    padding-bottom: 3rem;*/
 }
 
 .about_me_content {
@@ -368,8 +374,8 @@ body.dark .github_pill:hover {
 /*========== Projects Begins ==========*/
 .projects_container {
     margin-top: 1rem;
-    box-shadow: 0px 0px 2px 0px #000;
     padding-bottom: 4rem;
+    border-radius: 5px;
 }
 
 .projects_intro {
@@ -390,7 +396,7 @@ body.dark .github_pill:hover {
 }
 
 .projects_my_col {
-  box-shadow: 0px 0px 5px 0px #000;
+  box-shadow: 0px 0px 2px 0px #2f445a;
   border-radius: 5px;
 }
 
@@ -432,17 +438,15 @@ body.dark .github_pill:hover {
 }
 
 .selected_proj {
-    text-align: center;
-    margin: auto;
     font-size: 2rem;
-    opacity: 0.8;
-    margin-top: 10.5rem;
-    margin-bottom: 5rem;
+    margin-top: 13rem;
+    margin-bottom: 3rem;
+    margin-left: 4.5rem;
     color: #2f445a;
-    /*border-bottom: 1px solid #2f445a;*/
-    line-height: 0.1em;
+    border-bottom: 1.5px solid #2f445a;
+    line-height: 0.0em;
     font-weight: bold;
-    width: 35%;
+    width: 42%;
 }
 
 .selected_proj span {
@@ -452,7 +456,8 @@ body.dark .github_pill:hover {
 
 @media only screen and (max-width: 990px) {
     .selected_proj {
-      width: 80%;
+      width: 95%;
+      margin-left: 0rem;
     }
 }
 
@@ -550,7 +555,7 @@ select:focus {
 
 .tabs [class^="tab"] [type="radio"],
 .tabs [class*="tab"] [type="radio"] {
-    border-bottom: 0.5px solid #2f445a;
+    border-bottom: 1px solid #2f445a;
     cursor: pointer;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -567,12 +572,12 @@ select:focus {
 .tabs [class^="tab"] [type="radio"]:focus,
 .tabs [class*=" tab"] [type="radio"]:hover,
 .tabs [class*=" tab"] [type="radio"]:focus {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1.5px solid #fff;
 }
 
 .tabs [class^="tab"] [type="radio"]:checked,
 .tabs [class*=" tab"] [type="radio"]:checked {
-  border-bottom: 1px solid #fff;
+  border-bottom: 1.5px solid #fff;
 }
 
 .tabs [class^="tab"] [type="radio"]:checked + div,
@@ -592,11 +597,6 @@ select:focus {
   transition: all 0.3s ease-in-out;
 }
 
-.experience_container {
-    box-shadow: 0px 0px 2px 0px #000;
-    padding-bottom: 3rem;
-}
-
 .experience_content {
     font-size: 0.8rem;
     opacity: 0.8;
@@ -605,6 +605,10 @@ select:focus {
 .tabs .tab-4 {
     width: 25%;
     font-size: 1rem;
+}
+
+.tab_control {
+  margin-right: 6rem;
 }
 
 .tabs .tab-4 [type="radio"] + div {
@@ -697,7 +701,26 @@ select:focus {
 
 /*========== Contact Me Begins ==========*/
 .say_hello {
-  margin-bottom: 3rem;
+    font-size: 2rem;
+    margin-top: 10rem;
+    margin-left: 4.5rem;
+    margin: auto;
+    color: #2f445a;
+    border-bottom: 1.5px solid #2f445a;
+    line-height: 0.0em;
+    font-weight: bold;
+    width: 25%;
+}
+
+.say_hello span {
+    background: #0d1319;
+    padding: 0 10px;
+}
+
+@media only screen and (max-width: 990px) {
+    .say_hello {
+      width: 55%;
+    }
 }
 
 .contact_details {
@@ -707,7 +730,11 @@ select:focus {
 
 /*========== Footer Begins ==========*/
 .footer_container {
-    margin-top: 14rem;
+  margin-top: 10rem;
+}
+
+.contact_details {
+  margin-top: 3rem;
 }
 
 .footer_copy {
