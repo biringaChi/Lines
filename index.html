@@ -108,13 +108,12 @@
     <!-- Projects Begins -->
     <div class="container projects_container">
         <p class="selected_proj"> <span> Selected Projects </span> </p>
-
         <!-- Begin Row 1 -->
-        <div class="row justify-content-center projects_my_row projects_my_row_margin">
-            <div class="col-md-5 col-sm-5 projects_my_col projects_my_col_margin">
+        <div class="row justify-content-center projects_my_row">
+            <div class="col-md-5 col-sm-5 projects_my_col">
                 <a class="project_github" href="https://github.com/biringaChi/Lines" target="_blank"><i class="fab fa-github"> </i></a>
                 <div class="projects_image_placement hovereffect_2">
-                    <img class="lines img-responsive" src="./images/lines/lines.png" alt="Lines"/>
+                    <img class="lines" src="./images/lines/lines.png" alt="Lines"/>
                         <div class="projects_content">
                             <p class="projects_intro"> Lines: Personal portfolio Website V1 </p>
                             <p> A personal website to showcase some of my work. </p>
@@ -124,20 +123,29 @@
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-5 projects_my_col projects_my_col_margin">
+            <div class="col-md-5 col-sm-5 projects_my_col">
                 <a class="project_github" href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank"><i class="fab fa-github"> </i></a>
-                <div class="projects_image_placement hovereffect_2">
-                    <img class="sql_img img-responsive" src="./images/sql_query_eval/sql.png" alt="SQL Query Evaluator"/>
+                <div class="projects_image_placement">
+                    <img class="sql_img img_responsive" src="./images/sql_query_eval/sql.png" alt="SQL Query Evaluator"/>
                         <div class="projects_content">
                             <p class="projects_intro"> SQL Query Evaluator: An SQL engine to evaluate sql queries </p>
                             <p>
-                                An SQL query evaluator for a single-threaded database that can run TPC-H queries. It has operational support for
+                                An SQL query evaluator for a single-threaded database that can run TPC-H queries. <!-- It has operational support for
                                 Select, Project, Join, Union, Aggregate operations, and implements standard optimization techniques such as
-                                projection pushdown, selection pushdown, and cross-product to join conversion. <!-- Our program will receive an
+                                projection pushdown, selection pushdown, and cross-product to join conversion.  -->  <!-- Our program will receive an
                                 SQL File with a collection of CREATE TABLE and SELECT statements. These statements define a representational
                                 schema for the data and perform filtering and other operations on the data. The result of these operations will
                                 be in a standardized row-oriented data form. -->
                             </p>
+
+<!--                             <div class="display_content">
+                                An SQL query evaluator for a single-threaded database that can run TPC-H queries. It has operational support for
+                                Select, Project, Join, Union, Aggregate operations, and implements standard optimization techniques such as
+                                projection pushdown, selection pushdown, and cross-product to join conversion.   Our program will receive an
+                                SQL File with a collection of CREATE TABLE and SELECT statements. These statements define a representational
+                                schema for the data and perform filtering and other operations on the data. The result of these operations will
+                                be in a standardized row-oriented data form.
+                            </div> -->
 
                             <p class="technologies">  <i class="fab fa-java"></i> | SQL </p>
                             <p class="github_pill"> <a href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank">View on Github</a></p>
@@ -148,9 +156,9 @@
         </div>
 
         <!-- Begin Row 2 -->
-        <div class="row justify-content-center projects_my_row projects_my_row_margin">
+        <div class="row justify-content-center projects_my_row">
             <!-- Row 1 Col 1 -->
-            <div class="col-md-5 col-sm-5 projects_my_col projects_my_col_margin">
+            <div class="col-md-5 col-sm-5 projects_my_col">
                 <a class="project_github" href="https://github.com/biringaChi/PIF-Model" target="_blank"><i class="fab fa-github"> </i></a>
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" src="./images/pif_model/pif.png" alt="Predictive Inference Frame (PIF) Model"/>
@@ -158,10 +166,11 @@
                             <p class="projects_intro"> PIF Model: An AI model to predict and generate video frames</p>
                             <p>
                                 An Artificial Intelligence model that can infer a new frame between two existing sequential frames of a video.
-                                The generative neural network model used youtube footage to predict existing frames and generate videos.
-<!--                                 The model was able to infer new frames from high definition videos. Furthermore, the model was able to generate new videos
+                                <!-- The generative neural network model used youtube footage to predict existing frames and generate videos. -->
+                                <!-- The model was able to infer new frames from high definition videos. Furthermore, the model was able to generate new videos
                                 from the input data sample. The model works by splitting a video into contiguous frames categorized as scenes,
                                 these scenes are processed and passed into the generator network which generates new video frames. -->
+
                             </p>
                             <p class="technologies"> <i class="fab fa-python"></i> | PyTorch | NumPy </p>
                             <p class="github_pill"> <a href="https://github.com/biringaChi/PIF-Model" target="_blank">View on Github</a></p>
@@ -170,7 +179,7 @@
             </div>
 
             <!-- Row 1 Col 2 -->
-            <div class="col-md-5 col-sm-5 projects_my_col projects_my_col_margin">
+            <div class="col-md-5 col-sm-5 projects_my_col">
                 <a class="project_github" href="https://github.com/biringaChi/hoard" target="_blank"><i class="fab fa-github"> </i></a>
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" src="./images/hoard/hoard.png" alt="Hoard"/>
@@ -189,8 +198,8 @@
         </div>
 
        <!-- Begin Row 3 -->
-        <div class="row justify-content-center projects_my_row projects_my_row_margin">
-            <div class="col-md-5 col-sm-6 projects_my_col projects_my_col_margin">
+        <div class="row justify-content-center projects_my_row">
+            <div class="col-md-5 col-sm-6 projects_my_col">
                 <a class="project_github" href="https://github.com/biringaChi/Authorship-Attribution" target="_blank"><i class="fab fa-github"> </i></a>
                 <div class="projects_image_placement hovereffect_2">
                     <img class="sql_img img-responsive" src="./images/authorship_attr/authorship_attr.png" alt="Authorship Attribution Model"/>
@@ -198,7 +207,7 @@
                             <p class="projects_intro"> Authorship Attribution: A machine learning classification model </p>
                             <p>
                                 A classification model to predict authors based on sentiments.
-                                Experiments were executed on books extracted from Victorian Era Authors.
+                                <!-- Experiments were executed on books extracted from Victorian Era Authors. -->
                             </p>
 
                             <p class="technologies"> <i class="fab fa-r-project"></i> | Tidyverse | quanteda </p>
@@ -207,7 +216,7 @@
                 </div>
             </div>
 
-            <div class="col-md-5 col-sm-6 projects_my_col projects_my_col_margin">
+            <div class="col-md-5 col-sm-6 projects_my_col">
                 <a class="project_github" href="https://github.com/biringaChi/Chatbot" target="_blank"><i class="fab fa-github"> </i></a>
                 <!-- Row 1 Col 2 -->
                 <div class="projects_image_placement hovereffect_2">
@@ -216,7 +225,7 @@
                             <p class="projects_intro"> Customer Response Chatbot: An AI-powered chatbot </p>
                             <p>
                                 An AI model to predict responses to questions asked by customers to their favorite brands.
-                                The model was able to predict an average of 3 intelligible responses from 5 sequential questions.
+                                <!-- The model was able to predict an average of 3 intelligible responses from 5 sequential questions. -->
                             </p>
                             <p class="technologies"> <i class="fab fa-r-project"></i> | quanteda | caret </p>
                             <p class="github_pill"> <a href="https://github.com/biringaChi/Chatbot" target="_blank">View on Github</a></p>
