@@ -394,7 +394,7 @@ body.dark .github_pill:hover {
 
 .projects_intro {
     margin-bottom: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     font-weight: bold;
 }
 
@@ -424,32 +424,6 @@ body.dark .github_pill:hover {
     opacity: 0.8;
     text-align: justify;
 }
-
-/*Projects stuff*/
-.projects_image_placement {
-  position: relative;
-}
-
-.projects_image_placement .display_content{
-  transition: opacity 0.5s ease-in-out;
-  position: absolute;
-  top: 0;
-  left: 0;
-  opacity: 0;
-}
-
-.projects_image_placement:hover .img {
-  opacity: 0;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.projects_image_placement:hover .display_content {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
-
-/*Projects stuff*/
-
 
 .selected_proj {
     font-size: 2rem;
