@@ -301,7 +301,7 @@ body.dark .github_pill:hover {
 
 .section_headers span {
     background: #0d1319;
-    padding:0 10px;
+    padding: 0 10px;
 }
 
 @media only screen and (max-width: 990px){
@@ -321,6 +321,10 @@ body.dark .github_pill:hover {
     text-align: justify;
 }
 
+.about_me_my_row {
+  margin-top: -0.9rem;
+}
+
 .am_headers {
   margin-bottom: 3rem;
 }
@@ -329,6 +333,7 @@ body.dark .github_pill:hover {
     width: 60%;
     height: 100%;
     border-radius: 5px;
+    margin-top: -0.5rem;
     padding: 2px;
     opacity: 0.5;
     border: 2px solid #2f445a;
@@ -336,17 +341,6 @@ body.dark .github_pill:hover {
 
 .image_placement img:hover {
     opacity: 1;
-}
-
-
-@media only screen and (max-width: 990px) {
-    .image_placement img {
-        width: 0;
-        height: 0%;
-        border-radius: 0;
-        padding: 0;
-        border:  0;
-    }
 }
 
 .hovereffect_ab img {
@@ -367,6 +361,17 @@ body.dark .github_pill:hover {
     opacity:1;
     width: 40%;
     filter:alpha(opacity=100);
+}
+
+
+@media only screen and (max-width: 990px) {
+    .image_placement img {
+        width: 0;
+        height: 0%;
+        border-radius: 0;
+        padding: 0;
+        border:  0;
+    }
 }
 /*========== About Me Ends ==========*/
 
@@ -422,6 +427,12 @@ body.dark .github_pill:hover {
     font-size: 0.8rem;
     opacity: 0.8;
     text-align: justify;
+}
+
+.project_summary {
+  color: #fff;
+  opacity: 0.8;
+  font-size: 0.7rem;
 }
 
 .selected_proj {
