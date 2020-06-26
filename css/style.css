@@ -350,7 +350,6 @@ body.dark .github_pill:hover {
     transition:all .4s linear;
 }
 
-
 .hovereffect_ab:hover img {
     -ms-transform: scale(1.2);
     -webkit-transform: scale(1.2);
@@ -437,7 +436,7 @@ body.dark .github_pill:hover {
 
 .selected_proj {
     font-size: 2rem;
-    margin-top: 13rem;
+    margin-top: 14rem;
     margin-bottom: 3rem;
     margin-left: 4.5rem;
     color: #2f445a;
