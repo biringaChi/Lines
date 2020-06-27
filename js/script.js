@@ -21,6 +21,12 @@ window.addEventListener('load', () => setInterval(function() {
 },
 100));
 
+const logo = document.querySelectorAll("#logo path");
+
+for(let i = 0; i < logo.length; i++) {
+  console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
+}
+
 // Navigation bar
 let link_nav = document.getElementById("navbarMenu");
 if (link_nav) {
