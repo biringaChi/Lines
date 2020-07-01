@@ -1,22 +1,24 @@
 /*========== Body Begins ==========*/
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
 font-face {
-    font-family: Consolas;
-    src: "./fonts/consolas/Consolas.ttf";
-  }
+  font-family: Consolas;
+  src: "./fonts/consolas/Consolas.ttf";
+}
 
 body {
   background-color: #0d1319;
   text-align: center;
   color: #fff;
-  font-family: Consolas, Arial, "Market Pro", Calibre, "San Francisco", "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto, "Helvetica Neue", "Segoe UI", sans-serif;
+  font-family: Consolas, Arial, "Market Pro", Calibre, "San Francisco",
+    "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto,
+    "Helvetica Neue", "Segoe UI", sans-serif;
   height: 100%;
   font-size: 1rem;
   font-weight: lighter;
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .preloader {
@@ -33,37 +35,37 @@ body {
   transition: opacity 0.5s linear;
 }
 
-a, a:hover{
-    color: inherit;
-    text-decoration: none;
+a,
+a:hover {
+  color: inherit;
+  text-decoration: none;
 }
 
 *:focus {
-    outline: none;
+  outline: none;
 }
 /*========== Body Ends ==========*/
 
-
 /*========== Navigation Begins ==========*/
 .navbar {
-    background-color: #0d1319;
-    line-height: 4;
-    box-shadow: 0px 0px 1px 0px #2f445a;
-    -webkit-transition: all .4s ease;
+  background-color: #0d1319;
+  line-height: 4;
+  box-shadow: 0px 0px 1px 0px #2f445a;
+  -webkit-transition: all 0.4s ease;
 }
 
 .navbar-nav > li > a {
   position: relative;
   text-decoration: none;
   font-size: 0.8rem;
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .navbar-nav > li > a:hover {
   border-radius: 15px;
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .navbar-nav > li > a::before {
@@ -85,64 +87,63 @@ a, a:hover{
 }
 
 .navbar-nav {
-    float:none;
-    margin:0 auto;
-    display: block;
-    text-align: center;
-    margin-right: 1rem;
+  float: none;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  margin-right: 1rem;
 }
 
 .navbar-nav > li {
-    display: inline-block;
-    float:none;
-    margin-left: 2rem;
-    opacity: 0.8;
+  display: inline-block;
+  float: none;
+  margin-left: 2rem;
+  opacity: 0.8;
 }
 
-@media only screen and (max-width: 590px){
-    .navbar-nav > li > a {
-        content: "";
-        display: block;
-    }
+@media only screen and (max-width: 590px) {
+  .navbar-nav > li > a {
+    content: "";
+    display: block;
+  }
 
-    .navbar-nav a:hover {
-        border-bottom: none;
-    }
+  .navbar-nav a:hover {
+    border-bottom: none;
+  }
 
-    .resume_header {
-        margin-right: 2rem;
-        opacity: 0.8;
-    }
-
+  .resume_header {
+    margin-right: 2rem;
+    opacity: 0.8;
+  }
 }
 
 .logo {
-    border-radius: 15px;
-    opacity: 0.8;
+  border-radius: 15px;
+  opacity: 0.8;
 }
 
 .resume_header {
-    border: 1px solid #fff;
-    opacity: 0.8;
-    border-radius: 5px;
-    font-weight: lighter;
-    font-size: 0.9rem;
-    margin-left: 2rem;
-    width: 70px;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
+  border: 1px solid #fff;
+  opacity: 0.8;
+  border-radius: 5px;
+  font-weight: lighter;
+  font-size: 0.9rem;
+  margin-left: 2rem;
+  width: 70px;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .resume_header:hover {
-  background: #17202A;
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  background: #17202a;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
-@media only screen and (max-width: 990px){
-    .resume_header {
-        padding: 10px;
-    }
+@media only screen and (max-width: 990px) {
+  .resume_header {
+    padding: 10px;
+  }
 }
 
 .active {
@@ -196,7 +197,7 @@ a, a:hover{
   border-radius: 50%;
   background-color: #2f445a;
   position: absolute;
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .checkbox {
@@ -206,7 +207,7 @@ a, a:hover{
 
 .checkbox:checked + .label .ball {
   transform: translateX(20px);
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 body.dark .label {
@@ -219,43 +220,43 @@ body.dark .ball {
 
 body.dark .navbar {
   background-color: #16202a;
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 body.dark {
   background-color: #16202a;
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 body.dark .intro_content {
   color: #fff;
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 body.dark .about_me_content {
   color: #fff;
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 body.dark .projects_content {
   color: #fff;
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 body.dark .experience_content {
   color: #fff;
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
-body.dark .section_headers span{
+body.dark .section_headers span {
   background: #16202a;
 }
 
-body.dark .selected_proj span{
+body.dark .selected_proj span {
   background: #16202a;
 }
 
-body.dark .say_hello span{
+body.dark .say_hello span {
   background: #16202a;
 }
 
@@ -270,55 +271,55 @@ body.dark .github_pill:hover {
 
 /*========== Introduction Begins ==========*/
 .intro_container {
-    margin-top: 7rem;
+  margin-top: 7rem;
 }
 
 .intro_content {
-    text-align: center;
-    font-size: 5rem;
-    color: #2f445a;
-    font-weight: bold;}
+  text-align: center;
+  font-size: 5rem;
+  color: #2f445a;
+  font-weight: bold;
+}
 
 .typewrite {
-    opacity: 0.8;
-    font-weight: bold;
-    color: #fff;
+  opacity: 0.8;
+  font-weight: bold;
+  color: #fff;
 }
 /*========== Introduction Ends ==========*/
 
-
 /*========== About Me Begins ==========*/
 .section_headers {
-    margin-left: 14.8rem;
-    font-size: 2rem;
-    margin-top: 12rem;
-    border-bottom: 1.5px solid #2f445a;
-    color: #2f445a;
-    line-height: 0.0em;
-    font-weight: bold;
-    width: 27%;
+  margin-left: 14.8rem;
+  font-size: 2rem;
+  margin-top: 12rem;
+  border-bottom: 1.5px solid #2f445a;
+  color: #2f445a;
+  line-height: 0em;
+  font-weight: bold;
+  width: 27%;
 }
 
 .section_headers span {
-    background: #0d1319;
-    padding: 0 10px;
+  background: #0d1319;
+  padding: 0 10px;
 }
 
-@media only screen and (max-width: 990px){
-    .section_headers {
-      width: 55%;
-      margin-left: 0;
-    }
+@media only screen and (max-width: 990px) {
+  .section_headers {
+    width: 55%;
+    margin-left: 0;
+  }
 }
 
-.about_me_container{
-    margin-top: 12rem;
+.about_me_container {
+  margin-top: 12rem;
 }
 
 .about_me_content {
-    font-size: 0.8rem;
-    opacity: 0.8;
-    text-align: justify;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  text-align: justify;
 }
 
 .about_me_my_row {
@@ -330,80 +331,78 @@ body.dark .github_pill:hover {
 }
 
 .image_placement img {
-    width: 60%;
-    height: 100%;
-    border-radius: 5px;
-    margin-top: -0.5rem;
-    padding: 2px;
-    opacity: 0.5;
-    border: 2px solid #2f445a;
+  width: 60%;
+  height: 100%;
+  border-radius: 5px;
+  margin-top: -0.5rem;
+  padding: 2px;
+  opacity: 0.5;
+  border: 2px solid #2f445a;
 }
 
 .image_placement img:hover {
-    opacity: 1;
+  opacity: 1;
 }
 
 .hovereffect_ab img {
-    display:block;
-    position:relative;
-    -webkit-transition:all .4s linear;
-    transition:all .4s linear;
+  display: block;
+  position: relative;
+  -webkit-transition: all 0.4s linear;
+  transition: all 0.4s linear;
 }
 
 .hovereffect_ab:hover img {
-    -ms-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .hovereffect_ab:hover .overlay_ab {
-    opacity:1;
-    width: 40%;
-    filter:alpha(opacity=100);
+  opacity: 1;
+  width: 40%;
+  filter: alpha(opacity=100);
 }
 
-
 @media only screen and (max-width: 990px) {
-    .image_placement img {
-        width: 0;
-        height: 0%;
-        border-radius: 0;
-        padding: 0;
-        border:  0;
-    }
+  .image_placement img {
+    width: 0;
+    height: 0%;
+    border-radius: 0;
+    padding: 0;
+    border: 0;
+  }
 }
 /*========== About Me Ends ==========*/
 
-
 /*========== Projects Begins ==========*/
 .projects_container {
-    margin-top: 1rem;
-    padding-bottom: 4rem;
-    border-radius: 5px;
+  margin-top: 1rem;
+  padding-bottom: 4rem;
+  border-radius: 5px;
 }
 
 .sql_img {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    padding: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .lines {
-    width: 100%;
-    height: 100%;
-    border-radius: 15px;
-    padding: 5px;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  padding: 5px;
 }
 
 .projects_intro {
-    margin-bottom: 0.5rem;
-    font-size: 0.8rem;
-    font-weight: bold;
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
 }
 
 .projects_my_row {
-    margin-bottom: 2rem;
+  margin-bottom: 2rem;
 }
 
 .projects_my_col {
@@ -413,19 +412,20 @@ body.dark .github_pill:hover {
   top: 0;
   box-shadow: 0px 0px 2px 0px #2f445a;
   border-radius: 5px;
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
+  height: 10%;
 }
 
 .projects_my_col:hover {
   top: -1rem;
-  -webkit-transition: all .4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .projects_content {
-    margin-top: 2.0rem;
-    font-size: 0.8rem;
-    opacity: 0.8;
-    text-align: justify;
+  margin-top: 2rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  text-align: justify;
 }
 
 .project_summary {
@@ -435,66 +435,66 @@ body.dark .github_pill:hover {
 }
 
 .selected_proj {
-    font-size: 2rem;
-    margin-top: 14rem;
-    margin-bottom: 3rem;
-    margin-left: 4.5rem;
-    color: #2f445a;
-    border-bottom: 1.5px solid #2f445a;
-    line-height: 0.0em;
-    font-weight: bold;
-    width: 42%;
+  font-size: 2rem;
+  margin-top: 14rem;
+  margin-bottom: 3rem;
+  margin-left: 4.5rem;
+  color: #2f445a;
+  border-bottom: 1.5px solid #2f445a;
+  line-height: 0em;
+  font-weight: bold;
+  width: 42%;
 }
 
 .selected_proj span {
-    background: #0d1319;
-    padding:0 10px;
+  background: #0d1319;
+  padding: 0 10px;
 }
 
 @media only screen and (max-width: 990px) {
-    .selected_proj {
-      width: 95%;
-      margin-left: 0rem;
-    }
+  .selected_proj {
+    width: 95%;
+    margin-left: 0rem;
+  }
 }
 
 .project_github {
   padding-left: 25rem;
   color: #2f445a;
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .project_github:hover {
   opacity: 0.8;
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .github_pill {
-    border: 2px solid #2f445a;
-    border-radius: 25px;
-    padding: 5px;
-    text-align: center;
-    width: 30%;
-    margin: auto;
-    margin-top: .5rem;
-    transition: all .4s ease;
-    -webkit-transition: all .4s ease;
+  border: 2px solid #2f445a;
+  border-radius: 25px;
+  padding: 5px;
+  text-align: center;
+  width: 30%;
+  margin: auto;
+  margin-top: 0.5rem;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .github_pill:hover {
-  background: #17202A;
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  background: #17202a;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .technologies {
-    border-radius: 5px;
-    padding: 5px;
-    text-align: center;
-    width: 100%;
-    margin: auto;
+  border-radius: 5px;
+  padding: 5px;
+  text-align: center;
+  width: 100%;
+  margin: auto;
 }
 /*========== Projects Ends ==========*/
 
@@ -504,17 +504,18 @@ button:focus,
 input:focus,
 textarea:focus,
 select:focus {
-  outline: none; }
+  outline: none;
+}
 
 .tabs {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -moz-flex-wrap: wrap;
-    flex-wrap: wrap;
-    overflow: hidden;
-    text-align: left;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  flex-wrap: wrap;
+  overflow: hidden;
+  text-align: left;
 }
 
 .short_text {
@@ -523,30 +524,30 @@ select:focus {
 
 .tabs [class^="tab"] label,
 .tabs [class*=" tab"] label {
-    color: #fff;
-    cursor: pointer;
-    display: block;
-    line-height: 0rem;
-    padding: 1rem 0rem;
-    margin-top: 2rem;
-    text-align: center;
-    font-weight: bold;
-    opacity: 0.8;
+  color: #fff;
+  cursor: pointer;
+  display: block;
+  line-height: 0rem;
+  padding: 1rem 0rem;
+  margin-top: 2rem;
+  text-align: center;
+  font-weight: bold;
+  opacity: 0.8;
 }
 
 .tabs [class^="tab"] [type="radio"],
 .tabs [class*="tab"] [type="radio"] {
-    border-bottom: 1px solid #2f445a;
-    cursor: pointer;
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    display: block;
-    width: 100%;
-    -webkit-transition: all 0.3s ease-in-out;
-    -moz-transition: all 0.3s ease-in-out;
-    -o-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #2f445a;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  display: block;
+  width: 100%;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .tabs [class^="tab"] [type="radio"]:hover,
@@ -579,13 +580,13 @@ select:focus {
 }
 
 .experience_content {
-    font-size: 0.8rem;
-    opacity: 0.8;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 .tabs .tab-4 {
-    width: 25%;
-    font-size: 1rem;
+  width: 25%;
+  font-size: 1rem;
 }
 
 .tab_control {
@@ -593,38 +594,38 @@ select:focus {
 }
 
 .tabs .tab-4 [type="radio"] + div {
-    width: 400%;
-    margin-left: 200%;
+  width: 400%;
+  margin-left: 200%;
 }
 
 .tabs .tab-4 [type="radio"]:checked + div {
-    margin-left: 0;
-    width: 400%;
-    opacity: 0.8;
+  margin-left: 0;
+  width: 400%;
+  opacity: 0.8;
 }
 
 .tabs .tab-4:last-child [type="radio"]:checked + div {
-    margin-left: -475px;
-    width: 400%;
-    opacity: 0.8;
+  margin-left: -475px;
+  width: 400%;
+  opacity: 0.8;
 }
 
 .tab_ta {
-    margin-left: -155px;
-    width: 100%;
-    font-size: 0.8rem;
-    opacity: 0.8;
+  margin-left: -155px;
+  width: 100%;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 .tab_t {
-    margin-left: -315px;
-    width: 100%;
-    font-size: 0.8rem;
-    opacity: 0.8;
+  margin-left: -315px;
+  width: 100%;
+  font-size: 0.8rem;
+  opacity: 0.8;
 }
 
 .se {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .fa-caret-right {
@@ -655,12 +656,12 @@ select:focus {
 }
 
 @media only screen and (max-width: 990px) and (min-width: 100px) {
-    .short_text {
-      display: inline-block;
-    }
-    .full_text {
-      display: none;
-    }
+  .short_text {
+    display: inline-block;
+  }
+  .full_text {
+    display: none;
+  }
   .tabs .tab-4:last-child [type="radio"]:checked + div {
     margin-left: -315px;
     width: 400%;
@@ -674,33 +675,33 @@ select:focus {
   .tab_t {
     margin-left: -200px;
     width: 100%;
-    }
+  }
 }
 
 /*========== Experience Ends ==========*/
 
 /*========== Contact Me Begins ==========*/
 .say_hello {
-    font-size: 2rem;
-    margin-top: 10rem;
-    margin-left: 4.5rem;
-    margin: auto;
-    color: #2f445a;
-    border-bottom: 1.5px solid #2f445a;
-    line-height: 0.0em;
-    font-weight: bold;
-    width: 25%;
+  font-size: 2rem;
+  margin-top: 10rem;
+  margin-left: 4.5rem;
+  margin: auto;
+  color: #2f445a;
+  border-bottom: 1.5px solid #2f445a;
+  line-height: 0em;
+  font-weight: bold;
+  width: 25%;
 }
 
 .say_hello span {
-    background: #0d1319;
-    padding: 0 10px;
+  background: #0d1319;
+  padding: 0 10px;
 }
 
 @media only screen and (max-width: 990px) {
-    .say_hello {
-      width: 55%;
-    }
+  .say_hello {
+    width: 55%;
+  }
 }
 
 .contact_details {
@@ -718,23 +719,23 @@ select:focus {
 }
 
 .footer_copy {
-    font-size: 0.7rem;
-    opacity: 0.5;
-    margin-top: 12rem;
+  font-size: 0.7rem;
+  opacity: 0.5;
+  margin-top: 12rem;
 }
 
 .social_icons {
   font-size: 0.9rem;
   color: #fff;
   opacity: 0.8;
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
 }
 
 .social_icons:hover {
   color: #2f445a;
-  transition: all .4s ease;
-  -webkit-transition: all .4s ease;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
   opacity: 0.8;
 }
 /*========== Footer Ends ==========*/
