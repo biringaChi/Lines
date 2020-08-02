@@ -46,6 +46,21 @@ a:hover {
 }
 /*========== Body Ends ==========*/
 
+/*========== Intersection Observer Begins ==========*/
+.fade {
+  opacity: 0;
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+}
+
+.fade.display {
+  transition: all 0.4s ease;
+  -webkit-transition: all 0.4s ease;
+  opacity: 1;
+}
+/*========== Intersection Observer Ends ==========*/
+
+
 /*========== Navigation Begins ==========*/
 .navbar {
   background-color: #0d1319;

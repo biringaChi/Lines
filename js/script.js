@@ -23,10 +23,32 @@ window.addEventListener("load", () =>
 );
 
 const logo = document.querySelectorAll("#logo path");
-
 for (let i = 0; i < logo.length; i++) {
   console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
 }
+
+// Intersection Observer
+const fades = document.querySelectorAll(".fade");
+const displayOptions = {
+  root: null,
+  rootMargin: "-100px"
+};
+
+const displayOnScroll = new IntersectionObserver(function(entries, displayOnScroll) {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) {
+        return;
+      } else {
+        entry.target.classList.add("display");
+        displayOnScroll.unobserve(entry.target);
+      }
+    });
+  },
+  displayOptions);
+
+fades.forEach(f => {
+  displayOnScroll.observe(f);
+});
 
 // Navigation bar
 let link_nav = document.getElementById("navbarMenu");
