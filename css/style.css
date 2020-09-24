@@ -626,14 +626,21 @@ select:focus {
 }
 
 .tab_ta {
-  margin-left: -155px;
+  margin-left: -300px;
   width: 100%;
   font-size: 0.8rem;
   opacity: 0.8;
 }
 
-.tab_t {
-  margin-left: -315px;
+.tab_ra {
+  margin-left: 0px;
+  width: 100%;
+  font-size: 0.8rem;
+  opacity: 0.8;
+}
+
+.tab_gr {
+  margin-left: -150px;
   width: 100%;
   font-size: 0.8rem;
   opacity: 0.8;
