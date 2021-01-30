@@ -34,7 +34,7 @@
                 <a href="index.html"><img class="logo img-responsive" width="50px" , height="50px" src="./images/logo/logo.png" alt="logo"></a>
                 <ul class="navbar-nav">
                     <li class="nav-item active"><a href="#about" target="_self" class="nav-link"> About</a></li>
-                    <li class="nav-item"><a href="#projects" target="_self" class="nav-link"> PUB|PROJ </a></li>
+                    <li class="nav-item"><a href="#projects" target="_self" class="nav-link"> PUB | PROJ </a></li>
                     <li class="nav-item"><a href="#experience" target="_self" class="nav-link"> Experience</a></li>
                     <li class="nav-item"><a href="#contact" target="_self" class="nav-link"> Contact</a></li>
                 </ul>
@@ -61,10 +61,10 @@
     <div class="container intro_container">
         <div class="row justify-content-start align-items-center">
             <div class="col-md-12 py-2 col-sm-6">
-                <p class="typewrite"> Hi, my name is </p>
-                <p class="intro_content"> Chidera "Chi" Biringa </p>
+                <p class="typewrite">Hi, my name is</p>
+                <p class="intro_content">Chidera "Chi" Biringa</p>
                 <div id="about"></div>
-                <p class="typewrite"> I build </p>
+                <p class="typewrite">I build</p>
                 <p class="typewrite" data-period="1000" data-type='["ML Systems.", "Application Software."]'>
                     <span class="wrap"></span>
                 </p>
@@ -75,14 +75,15 @@
 
     <!-- About Me Begins -->
     <div class="container about_me_container">
-        <p class="section_headers am_headers"> <span> About Me </span> </p>
+        <p class="section_headers am_headers"><span>About Me</span></p>
         <div class="row justify-content-center about_me_my_row">
-            <div class="col-md-5 col-sm-6 about_me_my_col fade">
+            <div class="col-md-5 fade">
                 <div class="about_me_content">
-                    <p> Hi, I'm Chi, a Master's candidate and Cybersecurity Fellow in Computer and Information Science at the
+                    <p> Hi, I'm Chi, a Master's candidate in Computer and Information Science at the
                         <a class="umassd" href="https://www.umassd.edu/" target="_blank"> University of
-                            Massachusetts. </a></p>
-                    <p> My research interests are in Source Code performance analysis, DevSecOps, and Machine Learning. </p>
+                            Massachusetts.</a></p>
+                    <p>I am a Graduate Research Assistant and Fellow at NSA/DHS Center of Academic Excellence in Cyber Defense of UMass Dartmouth.</p>        
+                    <p>My research interests are in Cyber Defense and Source Code Performance Analysis.</p>
                     <div id="resume"></div>
                     <br>
                     <p><a class="res_pill github_pill" href="./resume/chidera-biringa-resume.pdf" target="_blank"> View Resume</a></p>
@@ -93,96 +94,114 @@
                 <div class="image_placement hovereffect_ab">
                     <div class="overlay_ab">
                     </div>
-                    <img class="profile_picture img-responsive" src="./images/profile_picture/profile_picture.jpeg" alt="Profile Picture" />
+                    <img class="profile_picture img-responsive" src="./images/profile_picture/profile_picture.jpeg" alt="Profile Picture"/>
                 </div>
             </div>
         </div>
     </div>
     <!-- About Me Ends -->
 
-<!-- Projects Begins -->
+<!-- Publication Begins -->
 <div id="projects"></div>
+
+<div class="container about_me_container">
+    <p class="section_headers am_headers"><span>Publications</span></p>
+    <div class="row justify-content-center fade">
+        <div class="col-md-8 pub_content">
+            <p>Conference Papers</p> 
+            <ul class="project_summary">
+                <li class="pub"><span>Ongoing</span> - Chidera Biringa, Gokhan Kul. 2021. User Experience Testing through Multi-Dimensional Performance Impact Analysis. 
+                    <i>In Proceedings of the ACM/IEEE International Conference on Automation of Software Test.</i> 
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<!-- Publication Ends -->
+
+<!-- Projects Begins -->
 <div class="container projects_container">
-    <p class="selected_proj"> <span> Selected Projects </span> </p>
+    <p class="selected_proj"><span>Selected Projects</span></p>
     <!-- Begin Row 1-->
     <div class="row justify-content-center projects_my_row">
         <!-- Row 1 Col 1-->
-        <div class="col-md-5 col-sm-5 projects_my_col fade">
+        <div class="col-md-5 projects_my_col fade">
             <a class="project_github" href="https://github.com/biringaChi/MPSS" target="_blank"><i class="fab fa-github"></i></a>
                <!-- MPSS -->
                 <div class="svg_container">
                 <img class="img_container" src="./images/mpss/MPSS.svg" alt="MPSS"/>
                 </div>
             <div class="projects_content">
-                <p class="projects_intro"> MPSS: A novel multi-dimensional analysis of updates in SDLC </p>
-                <p class="project_summary"> An AST-Neural facilitated multi-dimensional performance impact analysis of security Updates in Software Development Lifecycle (SDLC). </p>
-                <p class="technologies"> <i class="fab fa-java"></i> | <i class="fab fa-python"></i> </p>
-                <p class="github_pill"> <a href="https://github.com/biringaChi/MPSS" target="_blank">View on GitHub</a></p>
+                <p class="projects_intro">MPSS: An automated software testing system</p>
+                <p class="project_summary"> A testing system that learns how code changes impacts the time unit and software performance.</p>
+                <p class="technologies"><i class="fab fa-java"></i> | <i class="fab fa-python"></i></p>
+                <p class="github_pill"><a href="https://github.com/biringaChi/MPSS" target="_blank">View on GitHub</a></p>
             </div>
         </div>
+
         <!-- Row 1 Col 2-->
-        <div class="col-md-5 col-sm-5 projects_my_col fade">
+        <div class="col-md-5 projects_my_col fade">
             <a class="project_github" href="https://github.com/biringaChi/PIF-Model" target="_blank"><i class="fab fa-github"></i></a>
             <div class="svg_container">
                 <!-- PIF -->
                 <img class="img_container" src="./images/pif_model/pif.svg" alt="Predictive Inference Frame (PIF) Model"/>
             </div>
             <div class="projects_content">
-                    <p class="projects_intro"> PIF Model: An AI model to predict and generate video frames </p>
-                    <p class="project_summary"> An Artificial Intelligence model that can infer a new frame between two existing sequential frames of a video. </p>
+                    <p class="projects_intro">PIF Model: An AI model to predict and generate video frames</p>
+                    <p class="project_summary">An Artificial Intelligence model that can infer a new frame between two existing sequential frames of a video.</p>
 
                     <!-- <p> The generative neural network model used youtube footage to predict existing frames and generate videos. -->
                     <!-- The model was able to infer new frames from high definition videos. Furthermore, the model was able to generate new videos -->
                     <!-- from the input data sample. The model works by splitting a video into contiguous frames categorized as scenes, -->
                     <!-- these scenes are processed and passed into the generator network which generates new video frames. </p> -->
 
-                    <p class="technologies"> <i class="fab fa-python"></i> </p>
-                    <p class="github_pill"> <a href="https://github.com/biringaChi/PIF-Model" target="_blank">View on GitHub</a></p>
+                    <p class="technologies"><i class="fab fa-python"></i></p>
+                    <p class="github_pill"><a href="https://github.com/biringaChi/PIF-Model" target="_blank">View on GitHub</a></p>
             </div>
         </div>
-    </div>
+    </div>     
 
     <!-- Begin Row 2 -->
     <div class="row justify-content-center projects_my_row">
         <!-- Row 2 Col 1-->
-        <div class="col-md-5 col-sm-5 projects_my_col fade">
+        <div class="col-md-5 projects_my_col fade">
             <a class="project_github" href="https://github.com/biringaChi/Lines" target="_blank"><i class="fab fa-github"> </i></a>
             <div class="svg_container">
                 <!-- Lines -->
                 <img class="img_container" src="./images/lines/lines.svg" alt="Lines"/>
             </div>
             <div class="projects_content">
-                <p class="projects_intro"> Lines: My personal portfolio Website V1 </p>
-                <p class="project_summary"> A personal website to showcase some of my work. </p>
-                <p class="technologies"> <i class="fab fa-html5"></i> | <i class="fab fa-css3"></i> | <i class="fab fa-js-square"></i></p>
-                <p class="github_pill"> <a href="https://github.com/biringaChi/Lines" target="_blank">View on GitHub</a></p>
+                <p class="projects_intro">Lines: My personal portfolio Website V1</p>
+                <p class="project_summary">A personal website to showcase some of my work.</p>
+                <p class="technologies"><i class="fab fa-html5"></i> | <i class="fab fa-css3"></i> | <i class="fab fa-js-square"></i></p>
+                <p class="github_pill"><a href="https://github.com/biringaChi/Lines" target="_blank">View on GitHub</a></p>
             </div>
         </div>
         <!-- Row 2 Col 2-->
-        <div class="col-md-5 col-sm-5 projects_my_col fade">
+        <div class="col-md-5 projects_my_col fade">
             <a class="project_github" href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank"><i class="fab fa-github"></i></a>
             <div class="svg_container">
                 <!-- SQL Query Eval -->
                 <img class="img_container" src="./images/sql_query_eval/sql.svg" alt="SQL Query Evaluator"/>
             </div>
             <div class="projects_content">
-                <p class="projects_intro"> SQL Query Evaluator: An SQL engine to evaluate sql queries </p>
-                <p class="project_summary"> An SQL query evaluator for a single-threaded database that can run TPC-H queries. </p>
+                <p class="projects_intro">SQL Query Evaluator: An SQL engine to evaluate sql queries</p>
+                <p class="project_summary">An SQL query evaluator for a single-threaded database that can run TPC-H queries.</p>
                 <!-- <p> It has operational support for Select, Project, Join, Union, Aggregate operations, and implements standard optimization techniques such as -->
                 <!-- projection pushdown, selection pushdown, and cross-product to join conversion.  </p> -->
 
                 <!-- <p> Our program will receive an SQL File with a collection of CREATE TABLE and SELECT statements. These statements define a representational -->
                 <!-- schema for the data and perform filtering and other operations on the data. The result of these operations will -->
                 <!-- be in a standardized row-oriented data form. </p> -->
-                <p class="technologies"> <i class="fab fa-java"></i> </p> 
-                <p class="github_pill"> <a href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank">View on GitHub</a></p>
+                <p class="technologies"><i class="fab fa-java"></i></p> 
+                <p class="github_pill"><a href="https://github.com/biringaChi/SQL-Query-Evaluator" target="_blank">View on GitHub</a></p>
             </div>
         </div>
     </div>
     <!-- Begin Row 3 -->
     <div class="row justify-content-center projects_my_row">
         <!-- Row 3 Col 1-->
-        <div class="col-md-5 col-sm-6 projects_my_col fade">
+        <div class="col-md-5 projects_my_col fade">
             <a class="project_github" href="https://github.com/biringaChi/Authorship-Attribution" target="_blank"><i class="fab fa-github"></i></a>
             <!-- AA -->
             <div class="svg_container">
@@ -190,17 +209,38 @@
             </div>
             <div class="projects_content">
                 <p class="projects_intro"> Authorship Attribution: A classification model to predict authors based on sentiments</p>
-                <p class="project_summary"> A classification model to predict authors based on sentiments. </p>
+                <p class="project_summary"> A classification model to predict authors based on sentiments.</p>
                 <!-- <p> Experiments were executed on books extracted from Victorian Era Authors. </p> -->
-                <p class="technologies"> <i class="fab fa-r-project"></i> </p>
-                <p class="github_pill"> <a href="https://github.com/biringaChi/Authorship-Attribution" target="_blank">View on GitHub</a></p>
+                <p class="technologies"><i class="fab fa-r-project"></i></p>
+                <p class="github_pill"><a href="https://github.com/biringaChi/Authorship-Attribution" target="_blank">View on GitHub</a></p>
             </div>
         </div>
          <!-- Row 3 Col 2-->
-        <div class="col-md-5 col-sm-6 projects_my_col fade">
-            <a class="project_github" href="https://github.com/biringaChi/hoard" target="_blank"><i class="fab fa-github"> </i></a>
-            <!-- Hoard -->
+         <div class="col-md-5 projects_my_col fade">
+            <a class="project_github" href="https://github.com/biringaChi/Chatbot" target="_blank"><i class="fab fa-github"></i></a>
+             <!-- Chatbot -->
             <div class="svg_container">
+                <img class="img_container" src="./images/chatbot/chatbot.svg" alt="Customer Response Chatbot"/>
+            </div>
+            <div class="projects_content">
+                <p class="projects_intro"> Customer Response Chatbot: An AI-powered chatbot</p>
+                <p class="project_summary"> An AI model that predicts responses to questions asked by customers to companies.</p>
+                <!-- <p> The model was able to predict an average of 3 intelligible responses from 5 sequential questions. </p> -->
+                <p class="technologies"><i class="fab fa-r-project"></i></p>
+                <p class="github_pill"><a href="https://github.com/biringaChi/Chatbot" target="_blank">View on GitHub</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Begin Row 4 -->
+    <div class="row justify-content-center projects_my_row">
+        <div class="col-md-8">
+        <p class="github_pill"><a href="https://github.com/biringaChi?tab=repositories" target="_blank"><i class="fas fa-caret-down"></i></a></p>
+        </div>
+        <!-- Row 4 Col 1 -->
+        <!-- <div class="col-md-5 col-sm-6 projects_my_col fade"> -->
+            <!-- <a class="project_github" href="https://github.com/biringaChi/hoard" target="_blank"><i class="fab fa-github"> </i></a> -->
+            <!-- Hoard -->
+            <!-- <div class="svg_container">
                 <img class="img_container" src="./images/hoard/hoard.svg" alt="Hoard"/>
             </div>
             <div class="projects_content">
@@ -208,40 +248,22 @@
                 <p class="project_summary"> Hoard is a RESTFUL API with full CRUD functionalities to keep track of my part-time bibliophilic sessions.</p>
                 <p class="technologies"> <i class="fab fa-python"></i></p>
                 <p class="github_pill"> <a href="https://github.com/biringaChi/hoard" target="_blank">View on GitHub</a></p>
-            </div>
-        </div>
-    </div>
-    <!-- Begin Row 4 -->
-    <div class="row justify-content-center projects_my_row">
-        <!-- Row 4 Col 1 -->
-        <div class="col-md-5 col-sm-6 projects_my_col fade">
-            <a class="project_github" href="https://github.com/biringaChi/Chatbot" target="_blank"><i class="fab fa-github"></i></a>
-             <!-- Chatbot -->
-            <div class="svg_container">
-                <img class="img_container" src="./images/chatbot/chatbot.svg" alt="Customer Response Chatbot"/>
-            </div>
-            <div class="projects_content">
-                <p class="projects_intro"> Customer Response Chatbot: An AI-powered chatbot </p>
-                <p class="project_summary"> An AI model that predicts responses to questions asked by customers to companies. </p>
-                <!-- <p> The model was able to predict an average of 3 intelligible responses from 5 sequential questions. </p> -->
-                <p class="technologies"> <i class="fab fa-r-project"></i> </p>
-                <p class="github_pill"> <a href="https://github.com/biringaChi/Chatbot" target="_blank">View on GitHub</a></p>
-            </div>
-        </div>
+            </div> -->
+        <!-- </div> -->
         <!-- Row 4 Col 2 -->
-        <div class="col-md-5 col-sm-6 projects_my_col fade">
-            <a class="project_github" href="https://github.com/biringaChi/grocery_craw" target="_blank"><i class="fab fa-github"> </i></a>
+        <!-- <div class="col-md-5 col-sm-6 projects_my_col fade">
+            <a class="project_github" href="https://github.com/biringaChi/grocery_craw" target="_blank"><i class="fab fa-github"> </i></a> -->
             <!-- Grocery Craw -->
-            <div class="svg_container">
+            <!-- <div class="svg_container">
                 <img class="img_container" src="./images/grocery_craw/grocery_craw.svg" alt="Grocery Craw"/>
-            </div>
-            <div class="projects_content">
+            </div> -->
+            <!-- <div class="projects_content">
                 <p class="projects_intro"> Grocery Craw: A multi-threaded webcrawler</p>
                 <p class="project_summary"> A multi-threaded web crawler that scrapes the web pages of a grocery store.</p>
                 <p class="technologies"> <i class="fab fa-python"></i></p>
                 <p class="github_pill"> <a href="https://github.com/biringaChi/grocery_craw" target="_blank">View on GitHub</a></p>
             </div>
-        </div>
+        </div> -->
     </div>
 </div>
 <!-- Projects Ends -->
@@ -249,46 +271,46 @@
     <!-- Experience Begins -->
 <div id="experience"></div>
 <div class="container experience_container">
-    <p class="section_headers"><span> Experience </p></span>
+    <p class="section_headers"><span> Experience</p></span>
         <div class="row justify-content-center experience_my_row">
             <!-- Row 1 Col 1 -->
             <div class="col-md-7 col-sm-6 fade">
                 <div class="tabs">
                     <div class="tab-4">
-                        <label for="tab2-1"> RA </label>
+                        <label for="tab2-1">RA</label>
                         <input id="tab2-1" name="tabs-four" type="radio">
                         <div class="experience_content">
                             <p class="tab_ra">
                                 Research Assistant | Fellow @ <a class="umassd" href="https://www.umassd.edu/cybersecurity-center/about/" target="_blank">
-                                UMass Dartmouth - Cybersecurity center</a> <br> September 2020 - Present
+                                UMass Dartmouth - Cybersecurity center</a><br> September 2020 - Present
                             </p>
                             <p class="tab_ra">
-                                <i class="fas fa-caret-right"></i> Research Title: Multi-Dimensional Performance Impact Analysis of Security Updates in Software Development Lifecycle. <br>
+                                <i class="fas fa-caret-right"></i>Research Title: Multi-Dimensional Performance Impact Analysis of Security Updates in Software Development Lifecycle.<br>
                             </p>
                         </div>
                     </div>
 
                     <div class="tab-4">
-                        <label for="tab2-2" class="tab_control"> Grader </label>
+                        <label for="tab2-2" class="tab_control">Grader</label>
                         <input id="tab2-2" name="tabs-four" type="radio" checked="checked">
                         <div class="experience_content">
                             <p class="tab_gr">
                                 Grader @ <a class="umassd" href="https://www.umassd.edu/" target="_blank">
-                                University of Massachusetts, Darthmouth </a> <br> September - December, 2019
+                                University of Massachusetts, Darthmouth </a><br> September - December, 2019
                             </p>
-                            <p class="tab_gr"> <i class="fas fa-caret-right"></i> Graded undergraduate students' assignments, projects and exams for a course on Software Process and Project Management. </p>
+                            <p class="tab_gr"><i class="fas fa-caret-right"></i> Graded undergraduate students' assignments, projects and exams for a course on Software Process and Project Management.</p>
                         </div>
                     </div>
 
                     <div class="tab-4">
-                        <span class="full_text"> <label for="tab2-3"> TA </label> </span>
-                        <span class="short_text"> <label for="tab2-3"> &nbsp; &nbsp; &nbsp; TA </label> </span>
+                        <span class="full_text"><label for="tab2-3">TA</label></span>
+                        <span class="short_text"><label for="tab2-3"> &nbsp; &nbsp; &nbsp; TA</label></span>
                         <input id="tab2-3" name="tabs-four" type="radio">
                         <div class="experience_content">
                             <p class="tab_ta">
                                 Teaching Assistant @ <a class="umassd" href="https://www.umassd.edu/" target="_blank">
-                                University of Massachusetts, Darthmouth </a> <br> September, 2019 </p>
-                            <p class="tab_ta"> <i class="fas fa-caret-right"></i> Taught computer programming using Swift programming language. </p>
+                                University of Massachusetts, Darthmouth</a><br>September, 2019</p>
+                            <p class="tab_ta"><i class="fas fa-caret-right"></i>Taught computer programming using Swift programming language.</p>
                         </div>
                     </div>
                     <!-- <div class="tab-4">
@@ -307,13 +329,13 @@
             </div> -->
 
                     <div class="tab-4">
-                        <span class="full_text se"> <label for="tab2-4"> Software Engineer </label> </span>
-                        <span class="short_text se"> <label for="tab2-4"> &nbsp; &nbsp; &nbsp; SE </label> </span>
+                        <span class="full_text se"> <label for="tab2-4">Software Engineer</label> </span>
+                        <span class="short_text se"> <label for="tab2-4"> &nbsp; &nbsp; &nbsp; SE</label></span>
                         <input id="tab2-4" name="tabs-four" type="radio">
                         <div class="experience_content">
-                            <p class="se"> Software Engineer @ <a class="umassd" href="https://www.nnpcgroup.com/" target="_blank"> NNPC-PPMC </a> <br> May - August, 2015 </p>
+                            <p class="se"> Software Engineer @ <a class="umassd" href="https://www.nnpcgroup.com/" target="_blank">NNPC-PPMC</a><br> May - August, 2015</p>
                             <p class="se">
-                                <i class="fas fa-caret-right"></i> Developed webpages for the engineering section of the company. <br>
+                                <i class="fas fa-caret-right"></i> Developed webpages for the engineering section of the company.<br>
                                 <i class="fas fa-caret-right"></i> Designed strategies to improve the performance of in-house crudeoil processing software.
                             </p>
                         </div>
@@ -329,16 +351,16 @@
 <div class="container footer_container">
     <div class="row">
         <div class="col-md-12 fade">
-            <div class="say_hello" id="contact"> <span> Say Hello </span> </div>
+            <div class="say_hello" id="contact"><span> Say Hello </span></div>
             <div class="contact_details">
                 <p>
-                    <a class="social_icons" href="https://www.linkedin.com/in/chidera-biringa" target="_blank"> <i class="fab fa-linkedin-in mr-3"> </i></a>
+                    <a class="social_icons" href="https://www.linkedin.com/in/chidera-biringa" target="_blank"><i class="fab fa-linkedin-in mr-3"> </i></a>
                     <a class="social_icons" href="https://github.com/biringaChi" target="_blank"><i
-                            class="fab fa-github"> </i></a>
+                            class="fab fa-github"></i></a>
                 </p>
-                <p> <i class="fas fa-mobile-alt"></i> +1(508) 863-7923 </p>
-                <p> <i class="far fa-envelope"></i> biringachidera@gmail.com </p>
-                <p> <i class="far fa-address-book"> </i> New Bedford Massachusetts 02740 US </p>
+                <p> <i class="fas fa-mobile-alt"></i>+1(508) 863-7923</p>
+                <p> <i class="far fa-envelope"></i>biringachidera@gmail.com</p>
+                <p> <i class="far fa-address-book"> </i>New Bedford Massachusetts 02740 US</p>
             </div>
         </div>
     </div>
@@ -347,7 +369,7 @@
 
     <!-- Copyright Begins-->
     <div class="footer-copyright">
-        <p class="footer_copy"> <i class="fas fa-copyright"> </i> Built by Biringa Chidera 2020 </p>
+        <p class="footer_copy"><i class="fas fa-copyright"></i>Built by Biringa Chidera 2020</p>
     </div>
     <!-- Copyright Ends -->
     </footer>

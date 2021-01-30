@@ -332,7 +332,7 @@ body.dark .github_pill:hover {
 }
 
 .about_me_content {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   opacity: 0.8;
   text-align: justify;
 }
@@ -388,6 +388,26 @@ body.dark .github_pill:hover {
   }
 }
 /*========== About Me Ends ==========*/
+
+/*========== Publication Begins ==========*/
+.pub_content {
+  margin-top: -1rem;
+  font-size: 0.8rem;
+  opacity: 0.8;
+  margin-right: -6rem;
+  text-align: justify;
+}
+
+.pub span {
+  color: #e60000;
+}
+
+.pub_intro {
+  margin-bottom: 0.5rem;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+/*========== Publication Ends ==========*/
 
 /*========== Projects Begins ==========*/
 .projects_container {
@@ -707,7 +727,6 @@ select:focus {
     width: 100%;
   }
 }
-
 /*========== Experience Ends ==========*/
 
 /*========== Contact Me Begins ==========*/
