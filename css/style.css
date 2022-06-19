@@ -286,7 +286,7 @@ body.dark .github_pill:hover {
 
 /*========== Introduction Begins ==========*/
 .intro_container {
-  margin-top: 7rem;
+  margin-top: 3rem;
 }
 
 .intro_content {
@@ -329,7 +329,7 @@ body.dark .github_pill:hover {
 }
 
 .about_me_container {
-  margin-top: 12rem;
+  margin-top: -7rem;
 }
 
 .about_me_content {
@@ -350,7 +350,7 @@ body.dark .github_pill:hover {
   width: 60%;
   height: 100%;
   border-radius: 5px;
-  margin-top: -0.5rem;
+  margin-top: -3rem;
   padding: 2px;
   opacity: 0.5;
   border: 2px solid #2f445a;
@@ -412,7 +412,7 @@ body.dark .github_pill:hover {
 
 /*========== Projects Begins ==========*/
 .projects_container {
-  margin-top: 1rem;
+  margin-top: -10rem;
   padding-bottom: 4rem;
   border-radius: 5px;
 }
@@ -728,6 +728,11 @@ select:focus {
     width: 100%;
   }
 }
+
+.experience_container {
+  margin-top: -12rem;
+}
+
 /*========== Experience Ends ==========*/
 
 /*========== Contact Me Begins ==========*/
@@ -761,7 +766,7 @@ select:focus {
 
 /*========== Footer Begins ==========*/
 .footer_container {
-  margin-top: 10rem;
+  margin-top: 3rem;
 }
 
 .contact_details {

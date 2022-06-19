@@ -34,10 +34,12 @@
                 <a href="index.html"><img class="logo img-responsive" width="50px" , height="50px" src="./images/logo/logo.png" alt="logo"></a>
                 <ul class="navbar-nav">
                     <li class="nav-item active"><a href="#about" target="_self" class="nav-link"> About</a></li>
-                    <li class="nav-item"><a href="#projects" target="_self" class="nav-link"> PUB | PROJ </a></li>
+                    <li class="nav-item"><a href="#publications" target="_self" class="nav-link"> Publications </a></li>
+                    <li class="nav-item"><a href="#projects" target="_self" class="nav-link"> Projects </a></li>
                     <li class="nav-item"><a href="#experience" target="_self" class="nav-link"> Experience</a></li>
                     <li class="nav-item"><a href="#contact" target="_self" class="nav-link"> Contact</a></li>
                 </ul>
+                <a class="resume_header" href="./resume/resume.pdf" target="_blank">Resume</a>
             </div>
         </nav>
         <!-- Navigation Ends -->
@@ -63,33 +65,37 @@
             <div class="col-md-12 py-2 col-sm-6">
                 <p class="typewrite">Hi, my name is</p>
                 <p class="intro_content">Chidera "Chi" Biringa</p>
+                <p class="typewrite">Current Research Area: </p>
                 <div id="about"></div>
-                <p class="typewrite">My research interests are in</p>
-                <p class="typewrite" data-period="1000" data-type='["Code Security Vulnerability.", "Secure Software Design, Performance and Reliability.", "Database Systems and Security."]'>
+                <p class="typewrite" data-period="1000" data-type='["Secure Software Development.", "Intrusion Detection Systems.", "Software Performance."]'>
                     <span class="wrap"></span>
                 </p>
             </div>
         </div>
     </div>
     <!-- Introduction Ends -->
-
+    <!-- I am a 1st year Ph.D. student and graduate research assistant in Engineering and Applied Science - Computer Science (EAS-CS) 
+    at the University of Massachusetts at Dartmouth and NSA/DHS Center of Academic Excellence in Cyber Defense Research (CAE-R) -->
     <!-- About Me Begins -->
     <div class="container about_me_container">
         <p class="section_headers am_headers"><span>About Me</span></p>
         <div class="row justify-content-center about_me_my_row">
             <div class="col-md-5 fade">
                 <div class="about_me_content">
-                    <p> Hi, I'm Chi, a Ph.D. student in Engineering and Applied Science (Computer Science and Information Systems) @
-                        <a class="umassd" href="https://www.umassd.edu/" target="_blank"> University of
-                            Massachusetts.</a></p>
-                    <p>I am a Graduate Research Assistant and Fellow at NSA/DHS Center of Academic Excellence in Cyber Defense of UMass Dartmouth.</p>        
+                    <p> Hi, I'm Chi, a Ph.D. candidate & RA in Computer Science @ 
+                        <a class="umassd" href="https://www.umassd.edu/cybersecurity-center/" target="_blank"> UmassD|CAE-R. </a>
+                        My research area/interest is in secure software development, intrusion detection systems, 
+                        design-augmented security, software performance, backdoor attacks, and open-world recognition for NIDS.
+                    </p>
+                    <p>AI/ML + Cyber Security = Me</p>
+                    <!-- <p>I am a Graduate Research Assistant and Fellow at NSA/DHS Center of Academic Excellence in Cyber Defense of UMass Dartmouth.</p>         -->
                     <!-- <p>My research interests are in Software Engineering, Machine Learning, and Cybersecurity.</p> -->
                     <!-- <p> I am an incoming Ph.D. student in Computer Science and Information Systems at the <a class="umassd" href="https://www.umassd.edu/" target="_blank"> University of
                         Massachusetts.</a></p>  -->
 
-                    <div id="resume"></div>
+                    <!-- <div id="resume"></div> -->
                     <br>
-                    <p><a class="res_pill github_pill" href="./resume/chidera-biringa-resume.pdf" target="_blank"> View Resume</a></p>
+                    <!-- <p><a class="res_pill github_pill" href="./resume/resume.pdf" target="_blank"> View Resume</a></p> -->
                 </div>
             </div>
 
@@ -100,21 +106,35 @@
                     <img class="profile_picture img-responsive" src="./images/profile_picture/profile_picture.jpeg" alt="Profile Picture"/>
                 </div>
             </div>
+            <div id="publications"></div>
         </div>
     </div>
     <!-- About Me Ends -->
 
 <!-- Publication Begins -->
-<div id="projects"></div>
-
 <div class="container about_me_container">
     <p class="section_headers am_headers"><span>Publications</span></p>
     <div class="row justify-content-center fade">
         <div class="col-md-8 pub_content">
             <!-- <p>Papers</p>  -->
             <ul class="project_summary">
-                <li class="pub"> Chidera Biringa, Gokhan Kul. 2021. Automated User Experience Testing through Multi-Dimensional Performance Impact Analysis. 
-                    <i>In Proceedings of the IEEE/ACM International Conference on Automation of Software Test (AST)</i> 
+                <li class="pub"> Chidera Biringa<sup>1</sup> and Gokhan Kul. 2021. <a class="umassd"  href="https://arxiv.org/pdf/2104.03453.pdf" target="_blank"> Automated User Experience Testing through Multi-Dimensional Performance Impact Analysis.  </a>
+                    <i>IEEE/ACM International Conference on Automation of Software Test (AST)</i> 
+                </li>
+                <li class="pub">Gokhan Kul and  Chidera Biringa<sup>2</sup>. 2022. Forensics in Cyber-Physical Systems (CPS) (Chapter 1). 
+                    <i>Springer Cyber Forensics for Cyber-Physical Systems</i> 
+                </li>
+                <hr color="#2f445a">
+                <ins>Under Review</ins>
+                <li class="pub"> Chidera Biringa<sup>1</sup> and Gokhan Kul. 2022. SARA: Static Code Analysis Framework for Execution Time Learning and Microbenchmarking as a Way of Automated Performance Testing. 
+                    <i> IEEE Transactions on Software Engineering </i> 
+                </li>
+                <li class="pub"> Chidera Biringa<sup>1</sup>, Baye Gaspard and Gokhan Kul. 2022. SPECDET: Fast Spectre Vulnerabilities and Attack Detection via Gadgets and CPU-Processes State. 
+                    <i> IEEE Secure Development Conference (SecDev) </i> 
+                </li>
+                <div id="projects"></div>
+                <li class="pub"> Chidera Biringa<sup>1</sup> and Gokhan Kul. 2022. BISI: Towards Delegating Lateral-Injection Attack Security Strategies via Secure-Behavioral Design. 
+                    <i> IEEE Secure Development Conference (SecDev) </i> 
                 </li>
             </ul>
         </div>
@@ -239,6 +259,7 @@
         <div class="col-md-8">
         <p class="github_pill"><a href="https://github.com/biringaChi?tab=repositories" target="_blank"><i class="fas fa-caret-down"></i></a></p>
         </div>
+        <div id="experience"></div>
         <!-- Row 4 Col 1 -->
         <!-- <div class="col-md-5 col-sm-6 projects_my_col fade"> -->
             <!-- <a class="project_github" href="https://github.com/biringaChi/hoard" target="_blank"><i class="fab fa-github"> </i></a> -->
@@ -272,7 +293,6 @@
 <!-- Projects Ends -->
 
     <!-- Experience Begins -->
-<div id="experience"></div>
 <div class="container experience_container">
     <p class="section_headers"><span> Experience</p></span>
         <div class="row justify-content-center experience_my_row">
@@ -363,7 +383,7 @@
                 </p>
                 <p> <i class="fas fa-mobile-alt"></i> +1(508) 863-7923</p>
                 <p> <i class="far fa-envelope"></i> biringachidera@gmail.com</p>
-                <p> <i class="far fa-address-book"></i> New Bedford Massachusetts 02740 US</p>
+                <p> <i class="far fa-address-book"></i> Dartmouth Massachusetts 02740 US</p>
             </div>
         </div>
     </div>
