@@ -1,13 +1,13 @@
 <h1 align="center">
-  lines v1
+  lines
 </h1>
+
 <div align="center">
-  <img alt="Introduction Section" src="./images/read_me/sample.png" width="100%" height="100%" />
+  <img alt="Introduction Section" src="./images/read_me/PW.gif" width="100%" height="100%" />
 </div>
 
-
 ## License
-Lines is licensed under the **MIT License**.
+lines is licensed under the **MIT License**.
 
 ## Author
 Chidera Biringa [biringachidera@gmail.com]
