@@ -4,7 +4,7 @@ html {
 }
 
 font-face {
-  font-family: Consolas;
+  font-family: "Consolas";
   src: "./fonts/consolas/Consolas.ttf";
 }
 
@@ -12,7 +12,7 @@ body {
   background-color: #0d1319;
   text-align: center;
   color: #fff;
-  font-family: Consolas, Arial, "Market Pro", Calibre, "San Francisco",
+  font-family: "Consolas", Arial, "Market Pro", Calibre, "San Francisco",
     "SF Pro Text", -apple-system, system-ui, BlinkMacSystemFont, Roboto,
     "Helvetica Neue", "Segoe UI", sans-serif;
   height: 100%;
