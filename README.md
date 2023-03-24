@@ -1,5 +1,5 @@
 <h1 align="center">
-  lines
+  Lines
 </h1>
 
 <div align="center">
@@ -14,4 +14,4 @@ Chidera Biringa [biringachidera@gmail.com]
 
 
 ## Description
-<a href="https://biringachi.github.io/lines/" target="_blank"> lines </a> is a personal portfolio website to showcase some of my work. Built using HTML5, CSS3 and Vanilla Javascript, and hosted with GitHub Pages.
+<a href="https://biringachi.github.io/Lines/" target="_blank"> Lines </a> is a personal portfolio website to showcase some of my work. <!-- Built using HTML5, CSS3 and Vanilla Javascript, and hosted with GitHub Pages. -->
